@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <style>
+        #mse {background-color:green;width:200px;height:30px}
+    </style>
+</head>
+<body>
+<form>
+    <p>用户名:<input type="text" name="username" id="n"></p>
+    <p>密码:<input type="password" name="password" id="p"></p>
+    <p>性别:<input type="radio" name="sex" id="s">男 <input type="radio" name="sex" id="e">女</p>
+    <p>头像:<input type="file" name="file" id="f"></p>
+    <p>住址:
+        <select name="sheng">
+            <option value="guangdong">广东</option>
+            <option value="hebei">河北</option>
+            <option value="jiangsu">江苏</option>
+        </select>省
+        <select name="shi">
+            <option value="shenzhen" >深圳</option>
+            <option value="shenzhen" >保定</option>
+            <option value="shenzhen" >南京</option>
+        </select>市
+    </p>
+    <p>爱好:<input type="checkbox" value="lanqiu">篮球
+            <input type="checkbox" value="book">看书
+            <input type="checkbox" value="woman">女人</p>
+    <p id="1">
+        备注信息:<input type="text" name="message" id="mse">
+    </p>
+</form>
+</body>
+</html>

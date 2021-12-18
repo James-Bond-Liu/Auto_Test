@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一次HTML页面</title>
+    <style>
+        #p1 {color:orange}
+        hr {color:red}
+        div {background-color:red;width:800px}
+        table {border:1px solid black;border-collapse:collapse}
+        td {border:1px solid black}
+    </style>
+</head>
+<body>
+<p>My first paragraph</p>
+<font face="宋体" size="10" color="red">刘菲，正在学习web自动化，加油，你一定可以的！</font>
+<div>
+<h1>第一章，开始减肥</h1>
+<h2>第二章，开始学习python</h2>
+<img src="//www.baidu.com/img/dong_66cae51456b9983a890610875e89183c.gif" alt="小姨的大头贴">
+<p>白日依山尽，黄河入海流</p></div>
+<hr>
+<u><b>欲穷千里目</b></u>
+<p id="p1"><br><i>更上一层楼</i></p>
+<a href="https://www.iqiyi.com/v_19rrj6493o.html#curid=90836600_151dad92fe8511dfaa6aa4badb2c35a1" target="_blank">铁齿铜牙纪晓岚</a>
+<p>下面展示的是一个表格</p>
+<table>
+    <tr>
+        <td>曹操</td>
+        <td>刘备</td>
+        <td>周瑜</td>
+    </tr>
+    <tr>
+        <td>天猫</td>
+        <td>京东</td>
+        <td>拼多多</td>
+    </tr>
+    <tr>
+        <td>马云</td>
+        <td>刘强东</td>
+        <td>黄峥</td>
+    </tr>
+</table>
+<p id="ch">下面展示的是一个列表</p>
+<ul>
+    无序列表
+    <li>西施</li>
+    <li>貂蝉</li>
+    <li>杨玉环</li>
+</ul>
+<ol>
+    有序列表
+    <li>唐伯虎</li>
+    <li>祝枝山</li>
+    <li>文征明</li>
+
+</ol>
+<p>创建一个表单</p>
+<form action="">
+    请输入用户名：<input type="text" name="username"><br>
+    请&nbsp;输&nbsp;入&nbsp;密&nbsp;码：<input type="text" name="password">
+    <br>
+    <select name="sity" id="">
+        <option value="nanjing">南京</option>
+        <option value="shanghai">上海</option>
+        <option value="beijing">北京</option>
+    </select>
+</form>
+<script>
+    a=document.getElementById("p1")
+    a.onclick=function(){
+    alert("you click me")}
+    a.onmouseover=function(){
+    a.style.color="purple"}
+    a.onmouseout=function(){
+    a.style.color="green"}
+</script>
+
+</body>
+</html>
