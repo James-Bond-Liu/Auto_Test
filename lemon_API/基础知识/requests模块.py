@@ -44,6 +44,17 @@ import requests
 # print(res.json())
 # print('*'*50)
 
+# 获取接口的响应时间，使用elapsed方法
+# print(res.elapsed)
+# print(res.elapsed.total_seconds())  # 最常用，时间单位为s
+# print(res.elapsed.microseconds)  # 单位微秒ms，当响应时间大于1s时，只截取返回微秒部分
+# print(res.elapsed.seconds)
+# print(res.elapsed.days)
+# print(res.elapsed.max)
+# print(res.elapsed.min)
+# print(res.elapsed.resolution)
+
+
                                             #session会话请求
 s=requests.session()
 '''一般是先登录获取登录后的cookie后，然后再充值'''
