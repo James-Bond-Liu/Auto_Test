@@ -3,8 +3,8 @@
 # @Author : liufei
 # @File :conftest.PY
 from selenium import webdriver
-from Web.PageObjects.login_page import LoginPage
-from Web.TestDatas import common_data as CD
+from lemon_item.Web.PageObjects.login_page import LoginPage
+from lemon_item.Web.TestDatas import common_data as CD
 import pytest
 
 driver = None

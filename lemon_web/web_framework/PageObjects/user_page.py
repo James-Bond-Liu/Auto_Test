@@ -3,8 +3,8 @@
 # @Author : liufei
 # @File :user_page.PY
 
-from web_framework.Common.basepage import BasePage
-from web_framework.PageLocators.userpage_locators import UserPageLocators as loc
+from lemon_web.web_framework.Common.basepage import BasePage
+from lemon_web.web_framework.PageLocators.userpage_locators import UserPageLocators as loc
 
 class UserPage(BasePage):
 

@@ -4,13 +4,13 @@
 # @File :test_http_request.PY
 
 import unittest
-from API_item.tools.http_request import HttpRequest
-from API_item.tools.get_data import GetData
+from lemon_API.API_item.tools.http_request import HttpRequest
+from lemon_API.API_item.tools.get_data import GetData
 from ddt import ddt,data
-from API_item.tools.do_excel import DoExcel
-from API_item.tools.project_path import *
-from API_item.tools.output_log import OutPutLog
-from API_item.tools.do_mysql import DoMysql
+from lemon_API.API_item.tools.do_excel import DoExcel
+from lemon_API.API_item.tools.project_path import *
+from lemon_API.API_item.tools.output_log import OutPutLog
+from lemon_API.API_item.tools.do_mysql import DoMysql
 
 test_data=DoExcel.get_data(test_data_path)
 logger=OutPutLog.out_log()

@@ -4,9 +4,9 @@
 # @File :do_excel.PY
 
 from openpyxl import load_workbook
-from common.do_config import DoConfig
-from common.get_variable import GetVariable
-from common.get_path import *
+from lemon_item.API1.common.do_config import DoConfig
+from lemon_item.API1.common.get_variable import GetVariable
+from lemon_item.API1.common.get_path import *
 
 class DoExcel():
     def do_excel(self,filname):
@@ -83,7 +83,7 @@ class DoExcel():
 if __name__ == '__main__':
     print(DoExcel().do_excel(test_data_path))
 
-    # r'D:\Python_files\lemon_item\API\test_data\test_data.xlsx'
+    # r'D:\Python_files\lemon_item\API1\test_data\test_data.xlsx'
 
 
 

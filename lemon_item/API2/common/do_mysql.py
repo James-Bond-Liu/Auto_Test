@@ -4,8 +4,8 @@
 # @File :do_mysql.PY
 
 import pymysql
-from API.common.do_config import DoConfig
-from API.common.get_path import *
+from lemon_item.API2.common.do_config import DoConfig
+from lemon_item.API2.common.get_path import *
 
 class DoMysql():
     def do_mysql(self,query_sql,mode='all'):

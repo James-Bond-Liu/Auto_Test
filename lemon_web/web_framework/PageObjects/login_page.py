@@ -3,8 +3,8 @@
 # @Author : liufei
 # @File :login_page.PY
 
-from web_framework.PageLocators.loginpage_locators import LoginPageLocators as loc
-from web_framework.Common.basepage import BasePage
+from lemon_web.web_framework.PageLocators.loginpage_locators import LoginPageLocators as loc
+from lemon_web.web_framework.Common.basepage import BasePage
 
 '''登录页面'''
 class LoginPage(BasePage):

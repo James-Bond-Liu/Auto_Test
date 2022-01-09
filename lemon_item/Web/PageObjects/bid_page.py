@@ -3,8 +3,8 @@
 # @Author : liufei
 # @File :bid_page.PY
 
-from Web.PageLocators.bidpage_locators import BidPageLocators as loc
-from Web.Common.basepage import BasePage
+from lemon_item.Web.PageLocators.bidpage_locators import BidPageLocators as loc
+from lemon_item.Web.Common.basepage import BasePage
 
 class BidPage(BasePage):
 

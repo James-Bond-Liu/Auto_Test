@@ -7,8 +7,8 @@ import datetime
 import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from web_framework.Common import dir_config
-from web_framework.Common.logging import Logging
+from lemon_web.web_framework.Common import dir_config
+from lemon_web.web_framework.Common.logging import Logging
 
 #封装基本函数-执行日志，异常处理，失败截图
 #所有页面的公共操作部分(不是业务层面，跟业务无关)

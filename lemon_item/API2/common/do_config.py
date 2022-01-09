@@ -13,5 +13,5 @@ class DoConfig():
         return res
 
 if __name__ == '__main__':
-    print(DOConfig().do_config(r'D:\Python_files\lemon_item\API\conf\case.config','MODE','mode'))
+    print(DoConfig().do_config(r'D:\Python_files\lemon_item\API\conf\case.config','MODE','mode'))
 

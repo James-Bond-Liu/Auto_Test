@@ -4,9 +4,9 @@
 # @File :do_excel.PY
 
 from openpyxl import load_workbook
-from common.do_config import DoConfig
-from common.get_variable import GetVariable
-from common.get_path import *
+from lemon_item.API1.common.do_config import DoConfig
+from lemon_item.API1.common.get_variable import GetVariable
+from lemon_item.API1.common.get_path import *
 
 class DoExcel():
     def do_excel(self,filname):

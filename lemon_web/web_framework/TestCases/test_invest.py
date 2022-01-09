@@ -5,14 +5,14 @@
 
 import unittest
 from selenium import webdriver
-from web_framework.PageObjects.login_page import LoginPage
-from web_framework.PageObjects.index_page import IndexPage
-from web_framework.PageObjects.user_page import UserPage
-from web_framework.PageObjects.bid_page import BidPage
-import web_framework.TestDatas.common_data as CD
-import web_framework.TestDatas.invest_data as ID
-import web_framework.TestDatas.login_data as LD
-from web_framework.Common.logging import Logging
+from lemon_web.web_framework.PageObjects.login_page import LoginPage
+from lemon_web.web_framework.PageObjects.index_page import IndexPage
+from lemon_web.web_framework.PageObjects.user_page import UserPage
+from lemon_web.web_framework.PageObjects.bid_page import BidPage
+import lemon_web.web_framework.TestDatas.common_data as CD
+import lemon_web.web_framework.TestDatas.invest_data as ID
+import lemon_web.web_framework.TestDatas.login_data as LD
+from lemon_web.web_framework.Common.logging import Logging
 import ddt
 
 logging = Logging.do_logging()

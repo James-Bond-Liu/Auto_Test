@@ -4,19 +4,19 @@
 # @File :test_http_request.PY
 
 import unittest
-from API.common.http_request import HttpRequest
-from API.common.do_excel import DoExcel
+from lemon_item.API2.common.http_request import HttpRequest
+from lemon_item.API2.common.do_excel import DoExcel
 from ddt import ddt, data
-from API.common.get_variable import GetVariable
-from API.common.do_mysql import DoMysql
-from API.common.do_logging import Dologging
+from lemon_item.API2.common.get_variable import GetVariable
+from lemon_item.API2.common.do_mysql import DoMysql
+from lemon_item.API2.common.do_logging import Dologging
 
 @ddt
 class TestHttpRequest(unittest.TestCase):
     def setUp(self):
         pass
 
-    test_data = DoExcel().do_excel(r'D:\Python_files\lemon_item\API\test_data\test_data.xlsx')
+    test_data = DoExcel().do_excel(r'D:\Python_files\lemon_item\API\test_data\test_data.xlsx', 'login')
     @data(*test_data)
     def test_api(self, item):
         logger = Dologging().do_logging()
@@ -65,9 +65,9 @@ class TestHttpRequest(unittest.TestCase):
             raise e
         finally:
             logger.info('用力的执行结果为{0}'.format(res.json()))
-            DoExcel().write_back(r'/API2.0\test_data\test_data.xlsx', 'login',
+            DoExcel().write_back(r'/API2\test_data\test_data.xlsx', 'login',
                                  item['case_id'] + 1, 8, res.json())
-            DoExcel().write_back(r'/API2.0\test_data\test_data.xlsx', 'login',
+            DoExcel().write_back(r'/API2\test_data\test_data.xlsx', 'login',
                                  item['case_id'] + 1, 9, test_result)
     def tearDown(self):
         pass

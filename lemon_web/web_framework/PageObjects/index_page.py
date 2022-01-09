@@ -5,8 +5,8 @@
 
 '''登陆成功后的首页'''
 
-from web_framework.PageLocators.indexpage_locators import IndexPageLocators as loc
-from web_framework.Common.basepage import BasePage
+from lemon_web.web_framework.PageLocators.indexpage_locators import IndexPageLocators as loc
+from lemon_web.web_framework.Common.basepage import BasePage
 import random
 
 class IndexPage(BasePage):

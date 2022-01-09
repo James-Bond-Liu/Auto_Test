@@ -5,10 +5,10 @@
 
 from selenium import webdriver
 import unittest
-from web_framework.PageObjects.login_page import LoginPage
-from web_framework.PageObjects.index_page import IndexPage
-from web_framework.TestDatas import common_data as CD
-from web_framework.TestDatas import login_data as LD
+from lemon_web.web_framework.PageObjects.login_page import LoginPage
+from lemon_web.web_framework.PageObjects.index_page import IndexPage
+from lemon_web.web_framework.TestDatas import common_data as CD
+from lemon_web.web_framework.TestDatas import login_data as LD
 from ddt import ddt, data
 
 '''测试用例=测试对象（功能）+测试数据'''

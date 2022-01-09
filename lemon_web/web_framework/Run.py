@@ -5,7 +5,7 @@
 
 import unittest
 import HTMLTestRunnerNew
-from web_framework.Common import dir_config
+from lemon_web.web_framework.Common import dir_config
 
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()

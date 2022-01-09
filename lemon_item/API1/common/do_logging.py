@@ -4,7 +4,7 @@
 # @File :do_logging.PY
 
 import logging
-from common.get_path import *
+from lemon_item.API1.common.get_path import *
 
 class Dologging():
     def do_logging(self):

@@ -4,8 +4,8 @@
 # @File :test_login.PY
 
 
-from Web.PageObjects.index_page import IndexPage
-from Web.TestDatas import login_data as LD
+from lemon_item.Web.PageObjects.index_page import IndexPage
+from lemon_item.Web.TestDatas import login_data as LD
 import pytest  #pytest和unittest不要放在一起用
 
 '''测试用例=测试对象（功能）+测试数据'''

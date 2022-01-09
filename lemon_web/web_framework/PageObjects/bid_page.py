@@ -5,7 +5,7 @@
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_framework.PageLocators.bidpage_locators import BidPageLocators as loc
+from lemon_web.web_framework.PageLocators.bidpage_locators import BidPageLocators as loc
 
 class BidPage():
 

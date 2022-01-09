@@ -4,7 +4,7 @@
 # @File :http_request.PY
 
 import requests
-from common.do_logging import Dologging
+from lemon_item.API2.common.do_logging import Dologging
 
 class HttpRequest():
 

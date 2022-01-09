@@ -4,7 +4,7 @@
 # @File :do_regx.PY
 
 import re
-from common.get_variable import GetVariable
+from lemon_item.API2.common.get_variable import GetVariable
 
 class DoRegx():
     def do_regx(s):

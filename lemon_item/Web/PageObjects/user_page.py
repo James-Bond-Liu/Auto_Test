@@ -3,8 +3,8 @@
 # @Author : liufei
 # @File :user_page.PY
 
-from Web.Common.basepage import BasePage
-from Web.PageLocators.userpage_locators import UserPageLocators as loc
+from lemon_item.Web.Common.basepage import BasePage
+from lemon_item.Web.PageLocators.userpage_locators import UserPageLocators as loc
 
 class UserPage(BasePage):
 

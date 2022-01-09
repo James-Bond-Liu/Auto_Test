@@ -4,8 +4,8 @@
 # @File :get_cookie.PY
 
 import pandas as pd
-from API_item.tools.project_path import *
-from API_item.tools.read_config import ReadConfig
+from lemon_API.API_item.tools.project_path import *
+from lemon_API.API_item.tools.read_config import ReadConfig
 
 class GetData():
     Cookie=None

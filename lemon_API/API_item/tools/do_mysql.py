@@ -4,8 +4,8 @@
 # @File :do_mysql.PY
 
 import pymysql
-from API_item.tools.project_path import *
-from API_item.tools.read_config import ReadConfig
+from lemon_API.API_item.tools.project_path import *
+from lemon_API.API_item.tools.read_config import ReadConfig
 
 class DoMysql():
     def do_mysql(self,query_sql,state='all'):#query_sql表示查询语句，all——多条，1——一条

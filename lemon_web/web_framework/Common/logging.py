@@ -4,7 +4,7 @@
 # @File :do_logging.PY
 
 import logging
-from web_framework.Common import dir_config
+from lemon_web.web_framework.Common import dir_config
 
 class Logging():
 
