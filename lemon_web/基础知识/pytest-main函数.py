@@ -4,7 +4,9 @@
 # @File :pytest-main函数.PY
 
 import pytest
-
+# pytest.main(args,plugins)
+# args 传一个list对象，list 里面是多个命令行的参数
+# plugins 传一个list对象，list 里面是初始化的时候需注册的插件
 pytest.main(["命令参数1","命令参数2","命令参数3","...", "file_or_dir", "file_or_dir"])
 #命令参数和测试用例都是可选的,file_or_dir==待执行的测试用例名/类名/模块名
 
@@ -22,7 +24,7 @@ pytest.main(["-l"])     #打印失败用例的变量值
 pytest.main(["--duration=1"])   #只关心哪些部分是最慢的
 pytest.main(["-h"])     #pytest的帮助选项
 
-pytest.main(["-v", "-m", "run_first"])  # 执行标签为‘run_first’的测试用例
+pytest.main(["-v", "-m=run_first"])  # 执行标签为‘run_first’的测试用例
 """
     使用-m对用例进行标记，用例需注释@pytest.mark.xxx,将xxx作为参数传入
     使用-m "mark1 and mark2"可以同时选中带有这两个标记的所有测试用例。
