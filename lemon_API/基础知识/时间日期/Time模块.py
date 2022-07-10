@@ -5,12 +5,13 @@
 
 import time
 
-print(time.time())  #返回一个以秒为单位的时间戳（从1970年1月1号零点开始）
-print(time.localtime()) #元组时间格式,将一个时间戳转换为当前时区的
-print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime()))
-print(time.gmtime())#元组时间格式,将一个时间戳转换为UTC时区（0时区）的时间
-print(time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()))#把一个代表时间的元组（如由time.localtime()和time.gmtime()返回）转化为格式化的时间字符串
-
+print(time.time())  #返回一个当前以秒为单位的时间戳（从1970年1月1号零点开始）
+print(time.localtime()) #参数是时间戳。 获取本地当前时间，返回结果为时间元组，默认参数为time.time()的时间戳
+print(time.mktime())  # 参数是时间元组。通过时间元组获取其对应的时间戳，是time.locatime（）的逆过程
+print(time.gmtime())  #元组时间格式,将一个时间戳转换为UTC时区（0时区）的时间
+print(time.asctime())  # 参数是时间元组。获取当前的日期、时间、星期，默认参数为time.localtime
+print(time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()))  #把一个代表时间的元组（如由time.localtime()和time.gmtime()返回）转化为格式化的时间字符串
+print(time.strptime("2020-12-12 12:12:12","%Y-%m-%d %H:%M:%S"))  # 将字符串时间转换为时间元组
 '''
 %a	本地（locale）简化星期名称	
 %A	本地完整星期名称	
