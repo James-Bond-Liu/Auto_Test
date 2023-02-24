@@ -49,7 +49,7 @@ package：代码一般放到包里，包里有一个初始化文件，`__init__.
 
 ```python
 s = "hello,world!"
-n = s[1,5,2]
+n = s[1:5:2] # 取头不取尾
 print(n)  # el,
 ```
 
@@ -63,6 +63,7 @@ print(n)  # el,
    age = 4
    name = 'panda'
    print("{}岁的{}在爬".format(age, name))
+   print(f"{age}岁的{name}在爬") # 更简化的一种写法
    print("{1}岁的{0}在爬".format(name, age))
    ```
 
@@ -139,7 +140,7 @@ result = dict(zip(s1,s2))  # {'key1':'value1', 'key2','value2'}
 ### 4、字典dict{}
 
 * 字典内部结构key:value，key键必须是唯一的。元素之间用“，”分隔
-* 字典的value，可以存放任意类型的数据
+* 字典的value值，可以存放任意类型的数据
 
 #### 1.字典取值
 
@@ -147,7 +148,15 @@ result = dict(zip(s1,s2))  # {'key1':'value1', 'key2','value2'}
 
 #### 2.删除字典元素
 
-​	字典名.pop(key)
+​	字典名.pop(key)  # 可以将被删除的元素的value值返回给变量保存
+
+~~~python
+dict = {'name':'zhangsan', 'age':22}
+value = dict.pop['age']
+print(value) # 22
+~~~
+
+
 
 #### 3.字典新增元素
 
@@ -166,8 +175,6 @@ one.update(name='tiger', address='中国成都')  # 可以直接修改存在的K
 
 print(one)  # {'name': 'tiger', 'age': 4, 'address': '中国成都'}
 ~~~
-
-
 
 
 
@@ -228,7 +235,7 @@ else:
 
 ​	random.choice(序列)，序列指字典、列表、元组
 
-​	random.randrange(a, b, c)，a=开始，b=结束，c=步长。从指定递增的范围内随机取一个数
+​	random.randrange(a, b, c)，a=开始，b=结束，c=步长。从指定递增的整数序列内随机取一个数
 
 ​	
 
@@ -248,7 +255,7 @@ for i in li:
 
 #### 5.range(首, 尾, 步长)函数
 
-​	首：默认为0。步长：默认为1.
+​	首：默认为0。步长：默认为1.  # 取头不取尾
 
 ​	生成一个整数序列，取头不取尾。range(1, 5, 1)=1,2,3,4
 
@@ -269,29 +276,29 @@ result2 = list(zip(s1,s2))  # [('key1','value1'),('key2','value2')]。返回一�
 
 * 关键字，def 函数名（参数）。
 
-#### 1.参数
+#### 1.参数(形参)
 
 1. 位置参数
 
    def func(n, m, k):
 
-   赋值：func(1, 2, 3)
+   赋值：func(1, 2, 3)  或 func(n=1,m=2,k=3)
 
 2. 默认参数
 
    def func(n, m=1, k = 0):	默认参数要放在位置参数后面。
 
-   赋值：func(2, k=3)，当默认参数有值不需要重传时，可以直接给后面的默认参数赋值
+   赋值：func(2, k=3)，当默认参数有值不需要重传时，可以直接给后面的默认参数赋值  或func(n=2,k=3)
 
 3. 动态参数（*args），在不确定传入几个参数时使用。
 
    def func(*args)
 
-   *args，代表是一个不定长参数，但在函数体中利用这个参数时则不需要加“\*”，引用变量时直接用变量名args即可。
+   *args，代表是一个不定长参数，但在函数体中调用这个参数时则不需要加“\*”，引用变量时直接用变量名args即可。
 
    赋值：func(1, 3, 4, 5)
 
-   动态参数在字典中体现为元组结构
+   动态参数在函数中体现为元组结构
 
 4. 关键字参数（**kwargs）
 
@@ -444,7 +451,7 @@ ab.py尝试打开b_file下的a.txt：../b_file/a.txt
 
    ​	未报错，执行的动作语句
 
-   except  Exception as e:   				  
+   except  Exception as e:    # 将Exception错误类型赋值给变量e	  
 
    ​	报错，执行的动作语句	
 
@@ -466,7 +473,8 @@ ab.py尝试打开b_file下的a.txt：../b_file/a.txt
 
 3. 属性
 
-   * 同一个类中，在类下方法中调用类属性：self.属性名
+   * 同一个类中，在类下实例方法中调用类属性：self.属性名
+   * 同一个类中，在类下类方法中调用类属性：cls.属性名
    * 不同类中，不同文件(模块)调用类属性：类名.属性名
 
 4. 方法
