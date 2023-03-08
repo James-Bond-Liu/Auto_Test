@@ -11,32 +11,36 @@ Json和字典区别总结：
 """
 
 '''
-JSON在python中分别由list和dict组成。
-在python中，JSON模块提供以下四个功能，
-dumps、dump、loads、load。
-其中dumps把数据类型转换成字符串
-dump把数据类型转换成字符串并存储在文件中
-loads把字符串转换成数据类型
-load把文件打开从字符串转换成数据类型
+方法	        说明
+dumps()	    将Python对象编码成json字符串
+loads()	    解码json数据，返回python对象
+dump()	    将python对象编码成json数据并写入json文件中
+load()	    从json文件中读取数据并解码为Python对象
 '''
+
 import json
 
 '''字典转化为JSON并写入'''
-# 创建字典
-info_dict = {'name': 'Joe', 'age': 20, 'job': 'driver'}
-# dumps 将数据转换成字符串
-info_json1 = json.dumps(info_dict,sort_keys=False, indent=4, separators=(',', ': '))
-# 将字符串数据转换成json格式
-info_json2 = json.loads(info_json1)
-# 显示数据类型
-print(type(info_json1))
-f = open('info.json', 'w')
-f.write(info_json1)
+# 创建python对象-字典
+info_dict = {'name': 'Joe', 'age': 20, 'job': 'driver'}  # <class 'dict'>
+print(type(info_dict))
 
-'''读取JSON文件，并转化为字典'''
-# JSON到字典转化
-f2 = open('info.json', 'r')
-info_data = json.load(f2)
-print(info_data)
-# 显示数据类型
-print(type(info_data))
+# 将python对象转化为json字符串
+info_json1=json.dumps(info_dict)  # {"name": "Joe", "age": 20, "job": "driver"} <class 'str'>
+
+# 将json字符串转化为python对象
+info_json2=json.loads(info_json1)  # {'name': 'Joe', 'age': 20, 'job': 'driver'} <class 'dict'>
+print(info_json2)
+
+# # 显示数据类型
+# print(type(info_json1))
+# f = open('info.json', 'w')
+# f.write(info_json1)
+#
+# '''读取JSON文件，并转化为字典'''
+# # JSON到字典转化
+# f2 = open('info.json', 'r')
+# info_data = json.load(f2)
+# print(info_data)
+# # 显示数据类型
+# print(type(info_data))

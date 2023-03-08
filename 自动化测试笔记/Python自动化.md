@@ -31,7 +31,7 @@ package：代码一般放到包里，包里有一个初始化文件，`__init__.
 
 #### 3.字符串去除指定字符
 
-只能去除首尾两处的字符，只作用于首尾。字符串.strip（指定字符-默认为空格）
+字符串.strip（指定字符-默认为空格）只能去除首尾两处的字符，只作用于首尾。
 
 #### 4.字符串的拼接
 
@@ -521,7 +521,7 @@ ab.py尝试打开b_file下的a.txt：../b_file/a.txt
 
    4. 三者不同点
 
-      * 三种方法均可通过实例名和类名直接调用
+      * 三种方法均可通过类的实例名和类名直接调用
       * 静态方法和类方法不能调用类里的属性
       * 静态方法和类方法常用在函数和其他函数\属性没有关系时
 
@@ -550,7 +550,7 @@ ab.py尝试打开b_file下的a.txt：../b_file/a.txt
 
    * 初始化函数里面可以有默认值参数
    * 每个实例都自动调用初始化函数
-   * 每次创建一个实例，需要传递对应的且个数一指的实参
+   * 每次创建一个实例，需要传递对应的且个数一致的实参
    * 初始化函数可以有形参也可以无形参
    * 形参赋值给实例变量：self.变量名 = 形参
 
@@ -649,7 +649,7 @@ for i in sys.argv:
 # 输出：demo.py 1 3 5 6 7
 ~~~
 
-* 指定参数时，使用空格隔开就可以，缺点是我们必须脚本的顺序指定参数较多不建议使用。
+* 指定参数时，使用空格隔开就可以，缺点是我们必须按照脚本的顺序指定，参数较多不建议使用。
 * sys.argv是一个列表，第一个元素为py文件本身即文件名，后续元素为命令行向文件中传输的参数
 
 
@@ -665,24 +665,22 @@ for i in sys.argv:
   # 创建一个解析对象
   parser1 = argparse.ArgumentParser(description='位置参数')
   
-  # 向对象中添加位置参数
-  # integers 参数名
+  # 向对象中添加位置参数，相当于定义形参
+  # integers 形参数名
   # type 传入参数的数据类型, 该关键词可以传入list, str, tuple, set, dict等
   # help 该参数的提示信息
   # nargs是用来说明传入的参数个数，'+' 表示传入至少一个参数，'*' 　表示参数可设置零个或多个，'?'　表示参数可设置零个或一个
   parser1.add_argument('param1', type=int, nargs='+', help='需要传入的数字')
-  
   parser1.add_argument('param2', type=str, help='姓')
-  
   parser1.add_argument('param3', type=str, help='名')
   
   # 对添加的参数进行解析
   args1 = parser1.parse_args()  # args类似于python的字典
   
   # 使用 arg.参数名来提取传入的参数
-  print(args1)  # 在命令行中输入 python argument.py 5  # 输出 5
+  print(args1.param1, args1.param2, args1.param3 )  # 在命令行中输入 python argument.py 5 liu fei  # 输出 5 liu fei
   ~~~
-
+  
   
 
 * 可选参数（即选项参数）
@@ -803,7 +801,7 @@ python -m pip install --upgrade pip  # 升级pip命令
 * 接口分为：内部接口，外部接口
 * 按照不同的协议分为：http接口，webservice接口，dubbo接口，socket接口
 * 接口与接口之间的协议必须保持一致，否则无法通信
-* http请求分为：get（从服务端获取资源）、pos（用于创建资源，提交表单data、提交请求体body-json）、delete（用于删除资源）、put（用于整体更新资源）、head、option
+* http请求分为：get（从服务端获取资源）、post（用于创建资源，提交表单data、提交请求体body-json）、delete（用于删除资源）、put（用于整体更新资源）、head、option
 
 #### 2.请求
 
@@ -886,12 +884,21 @@ get请求的请求参数存在于URL中，“？”后面为参数，&为参数�
 **requests.get(url, params, \**kwargs)**：从指定的资源请求数据，是获取HTML网页信息的主要方法，对应HTTP的GET。
 **params** ：字典或字节序列格式，将作为参数增加到url中，可选
 
+| 参数    | 类型 | 作用                                                       |
+| ------- | ---- | ---------------------------------------------------------- |
+| params  | 字典 | 该方法会自动对params字典编码,然后和url拼接，放在url连接里  |
+| url     | 字典 | requests 发起请求的地址                                    |
+| headers | 字典 | 请求头，发送请求的过程中请求的附加内容携带着一些必要的参数 |
+| cookies | 字典 | 携带登录状态                                               |
+| proxies | 字典 | 用来设置代理 ip 服务器                                     |
+| timeout | 整型 | 用于设定超时时间， 单位为秒                                |
+
 
 
 **post**
 **requests.post(url, data, json, \**kwargs)**：向指定的资源提交要被处理的数据，对应HTTP的POST。
 **data ：**data参数的对象一般是字典类型，在发出请求时会自动编码为表单形式
-**json ：**json参数会自动将字典类型的对象转换为json格式
+**json ：**json参数会自动将字典类型的对象转换为json格式，然后发送请求
 
 
 
@@ -931,23 +938,22 @@ data参数的对象一般是字典类型，在发出请求时会自动编码为�
 
 ![img](Python自动化.assets/v2-7380e5b4e2a5292ccc684aa3dc3db174_720w-16414492773804.jpg)
 
-
 **3. json**
 JSON格式的数据，作为Request的内容。json参数会**自动**将字典类型的对象转换为json格式。
 
 ![img](Python自动化.assets/v2-f7f6f1f991d6971217b37010991f61b8_720w-16414492773806.jpg)
 
-
 **4. headers**
-字典格式，为请求添加 HTTP 头部信息，模拟浏览器进行访问。headers是解决requests请求反爬的方法之一。 headers中有很多内容，常用的是user-agent 和 host。
+字l典格式，为请求添加 HTTP 头部信息，模拟浏览器进行访问。headers是解决requests请求反爬的方法之一。 headers中有很多内容，常用的是user-agent 和 host。
 
 ![img](Python自动化.assets/v2-e38ff9c5ced54cdb451def61a345e813_720w.jpg)
-
 
 **5. cookies**
 cookies参数为字典格式的数据或CookieJar
 **什么是cookie？**
-当用户通过浏览器首次访问一个域名时，访问的web服务器会给客户端发送数据，这些数据就是cookie，它是为了辨别用户身份而储存在用户本地终端上的数据。cookie大部分都是加密的，cookie存在于缓存中或者硬盘中，在硬盘中的是一些文本文件，当访问该网站时，就会读取对应的网站的cookie信息。一般来说，一旦将cookie保存在计算机上，则只有创建该cookie的网站才能读取它。
+当用户通过浏览器首次访问一个域名时，访问的web服务器会给客户端发送数据，这些数据就是cookie，它是为了辨别用户身份而储存在用户本地终端上的数据。cookie大部分都是加密的，cookie存在于缓存中或者硬盘中，在硬盘中的是一些文本文件，当访问该网站时，就会读取对应的网站的cookie信息。一般来说，一旦
+
+
 
 ![img](Python自动化.assets/v2-894ea0003172738bd5ae50a6be1271ca_720w.jpg)
 
