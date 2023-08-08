@@ -33,6 +33,8 @@ age=18
 name="liufei"
 print("2020年的{}，今年已经{}岁了".format(name,age))
 print("2020年的{1}，今年已经{0}岁了".format(name,age))
+#format 格式化输出简写方式
+print(f"2020年的{name}， 今年已经{age}岁了")
 
 #方法二 %
 #%s,可以用来存放任何类型数据，%d,用来存放整形数据，如果存放浮点数，则会被强制转化成整型，

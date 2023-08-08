@@ -9,7 +9,7 @@ project_path=os.path.split(os.path.realpath(os.getcwd()))[0]
 
 test_data_path=os.path.join(project_path, 'test_data', 'test_data.xlsx')
 
-case_config_path=os.path.join(project_path, 'conf', 'case.config')
+case_config_path=os.path.join(project_path, 'conf', 'config.ini')
 
 test_result_html_path=os.path.join(project_path, 'test_result', 'html', 'test_result.html')
 

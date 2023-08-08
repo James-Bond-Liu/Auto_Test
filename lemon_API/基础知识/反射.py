@@ -8,7 +8,7 @@
 class GetData():
     cookie='888'
 
-print(GetData.cookie)
+print(GetData.cookie)  # 直接调用类属性
 
 #setattr()方法可以直接修改类里面的属性，set attribute  setattr(类名，属性名，新值)
 setattr(GetData,'cookie','666')

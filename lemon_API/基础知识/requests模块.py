@@ -4,55 +4,56 @@
 # @File :class_0610.PY
 
 import requests
-#                                         #GET请求
-# url='https://www.ketangpai.cn/User/login.html'
-# dictory={'phone':'15631128376','key':'www.950620.cn'}
-# header={'User-Agent': 'Mozilla/5.0'}
-# res=requests.get(url, dictory, headers=header)
-# print(res.headers)#获取响应消息的响应头
-# print("*"*50)
-# print(res.status_code)#获取响应消息的状态码
-# print("*"*50)
-# print(res.text)#获取响应报文
-# print("*"*50)
-# print(res.request.headers)#通过响应消息来获取《请求头》
-#
-#                                                     # POST请求
-# url='https://www.ketangpai.cn/User/login.html'
-# data={'mobilephone':'156311276','password':'www.950620.com'}
-# res=requests.post(url,data=data)
-#
-# #获取响应头
-# print(res.headers)
-# print('*'*50)
-#
-# #获取响应响应体中的cookie
-# print(res.cookies)
-# print('*'*50)
-#
-# #cookie中的内容是一种类字典的格式，可以通过字典[key]的方法来提取value
-# print(res.cookies['SERVERID'])
-# print('*'*50)
-# print(res.cookies['PHPSESSID'])
-# print('*'*50)
-#
-# #获取状态码
-# print(res.status_code)
-# print('*'*50)
-#
-# #获取响应报文的json字典格式
-# print(res.json())
-# print('*'*50)
+                                        #GET请求
+url='https://www.ketangpai.cn/User/login.html'
+dictory={'phone':'15631128376','key':'www.950620.cn'}
+header={'User-Agent': 'Mozilla/5.0'}
+res=requests.get(url, dictory, headers=header)
+print(res.headers)#获取响应消息的响应头
+print("*"*50)
+print(res.status_code)#获取响应消息的状态码
+print("*"*50)
+print(res.text)#获取响应报文
+print("*"*50)
+print(res.request.headers)#通过响应消息来获取《请求头》
+
+                                                    # POST请求
+url='https://www.ketangpai.cn/User/login.html'
+data={'mobilephone':'156311276','password':'www.cctv.com'}
+res=requests.post(url,data=data)
+
+#获取响应头
+print(res.headers)
+print('*'*50)
+
+#获取响应响应体中的cookie
+print(res.cookies)
+print('*'*50)
+
+#cookie中的内容是一种类字典的格式，可以通过字典[key]的方法来提取value
+print(res.cookies['SERVERID'])
+print('*'*50)
+print(res.cookies['PHPSESSID'])
+print('*'*50)
+
+#获取状态码
+print(res.status_code)
+print('*'*50)
+
+#获取响应报文的json字典格式
+print(res.json())
+print('*'*50)
 
 # 获取接口的响应时间，使用elapsed方法
-# print(res.elapsed)
-# print(res.elapsed.total_seconds())  # 最常用，时间单位为s
-# print(res.elapsed.microseconds)  # 单位微秒ms，当响应时间大于1s时，只截取返回微秒部分
-# print(res.elapsed.seconds)
-# print(res.elapsed.days)
-# print(res.elapsed.max)
-# print(res.elapsed.min)
-# print(res.elapsed.resolution)
+print(res.elapsed)
+print(res.elapsed.total_seconds())  # 最常用，时间单位为s
+print(res.elapsed.microseconds)  # 单位微秒ms，当响应时间大于1s时，只截取返回微秒部分
+print(res.elapsed.seconds)
+print(res.elapsed.days)
+print(res.elapsed.max)
+print(res.elapsed.min)
+print(res.elapsed.resolution)
+
 
 
                                             #session会话请求

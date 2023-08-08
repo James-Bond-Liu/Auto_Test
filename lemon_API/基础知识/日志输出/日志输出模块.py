@@ -16,7 +16,7 @@ class OutPutLog():
 
             # 设定格式器
             formatter=logging.Formatter(fmt="%(asctime)s %(name)s %(levelname)s %(filename)s %(message)s",
-                                        datefmt="%Y-%m-%d %H:%M:%S")
+                                        datefmt="%Y-%m-%d %H:%M:%S") # 注意格式器中的参数fmt的实参每个参数后面都要加”s“
             ch.setFormatter(formatter)   #将格式器加入到处理器中
             fh.setFormatter(formatter)
             logger.addHandler(ch)

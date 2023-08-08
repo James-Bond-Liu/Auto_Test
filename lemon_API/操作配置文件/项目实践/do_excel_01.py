@@ -15,7 +15,7 @@ class GetTestData():
     def get_test_data(self):
 
         #直接从配置文件读取mode值
-        mode=ReadConfig().read_config('case.config', 'MODE', 'mode')
+        mode=ReadConfig().read_config('config.ini', 'MODE', 'mode')
 
         wb=load_workbook(self.filename)
         ws=wb[self.sheetname]

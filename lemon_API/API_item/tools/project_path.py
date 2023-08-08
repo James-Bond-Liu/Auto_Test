@@ -15,7 +15,7 @@ test_data_path=os.path.join(project_path,'test_data',"test_data.xlsx")
 test_report_path=os.path.join(project_path,'test_result','html_report','test_api.html')
 
 #配置文件的路径
-test_config_path=os.path.join(project_path,'conf','case.config')
+test_config_path=os.path.join(project_path,'conf','config.ini')
 
 #输出日志文件的路径
 test_log_path=os.path.join(project_path,'test_result','log','test_api.txt')

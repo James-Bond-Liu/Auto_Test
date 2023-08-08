@@ -39,7 +39,7 @@ data8 = df.head(n=5) #获取前几行数据，默认5行
 
 data9 = df.tail(n=5)    #获取后几行数据，默认5行
 
-print("输出行号列表:", df.index.values)   #获取行号并打印输出,从0开始,返回一个列表
+print("输出行号列表:", df.index.values)   #获取行号并打印输出,从0开始,返回一个列表,不包括列名
 
 print("输出标题列名:", df.columns.values)   #获取列名并打印输出['case_id','data','title','http_method','expected']
 

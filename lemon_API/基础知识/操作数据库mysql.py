@@ -20,8 +20,8 @@ cursor = db.cursor()
 query_sql='select * from emp'
 cursor.execute(query_sql)
 
-res=cursor.fetchall()
-res=cursor.fetchone()# Python查询Mysql使用 fetchone() 方法获取单条数据, 使用fetchall() 方法获取多条数据。
+res=cursor.fetchall() # Python查询Mysql使用fetchall() 方法获取多条数据。
+res=cursor.fetchone() # Python查询Mysql使用 fetchone() 方法获取单条数据
 print(res)
 
 #关闭游标

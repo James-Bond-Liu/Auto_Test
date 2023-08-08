@@ -20,7 +20,7 @@ print("返回现在的时间是：",datetime.datetime.now())
 
 print("当前UTC日期和时间是：",datetime.datetime.utcnow())
 
-print("对应时间戳的日期和时间是：",datetime.datetime.fromtimestamp(1234567896))
+print("时间戳的日期和时间是：",datetime.datetime.fromtimestamp(1234567896))
 
 print("对应UTC时间戳的日期和时间是：",datetime.datetime.utcfromtimestamp(1234567896))
 
