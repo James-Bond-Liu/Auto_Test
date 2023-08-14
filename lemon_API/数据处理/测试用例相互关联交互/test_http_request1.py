@@ -3,18 +3,17 @@
 # @Author : liufei
 # @File :http_request_unittest_new.PY
 
-#将cookie放在setup函数中,在充值用例执行之前会先执行setup函数，这样可以充值用例调用setup中的cookie
+#将cookie放在setup函数中,在充值用例执行之前会先执行setup函数，这样充值用例可以调用setup中的cookie
 import unittest
 from 数据处理.测试用例相互关联交互.http_request import HttpRequest
 
 class http_request_login(unittest.TestCase):
     def setUp(self):
-        '''setup函数在每个用例执行之前都会执行一次setup函数。
+        '''setup函数，在每个用例执行之前都会执行一次setup函数。
         将url放在此处，便于后续函数调用，减少代码重复
         '''
-        self.login_data = {'name': '15631128476', 'passwd': 'www.950620.cn'}
+        self.login_data = {'name': '15631128476', 'passwd': 'www.950620.cn'}  # 实例变量，这样可以在类中的其他方法调用。相当于扩大了变量的作用范围
         self.login_url = 'http://ip:8080/futureloan/mvc/api/member/login'
-        #只有加上self，在类后面其他的方法函数中才可以调用这个属性
         self.login_cookies=HttpRequest().http_request(self.login_url,'get',self.login_data).cookies
         self.recharge_url='http://ip:8080/futureloan/mvc/api/member/recharge'
 

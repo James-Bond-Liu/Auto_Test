@@ -14,7 +14,7 @@ class TestHttp(unittest.TestCase):
         self.method=method
         self.data=data
         self.expected=expected
-    def test_api(self): #测试用例本身不能进行参数话
+    def test_api(self): #测试用例本身不能进行参数化
         res=HttpRequest().http_request(self.url, self.method, self.data,getattr(GetData,'cookie'))
         if res.cookies:
             setattr(GetData,'cookie',res.cookies)

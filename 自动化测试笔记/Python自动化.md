@@ -781,6 +781,7 @@ CompletedProcess(args=['ls', '-l', '/dev/null'], returncode=0)
 #### pip命令常见操作
 
 ~~~python
+pip -V  # 查看当前pip的版本
 pip install XXX #安装包
 
 pip install XXX==2.2.3 #指定安装包的版本
@@ -965,7 +966,7 @@ JSON格式的数据，作为Request的内容。json参数会**自动**将字典�
 ![img](Python自动化.assets/v2-f7f6f1f991d6971217b37010991f61b8_720w-16414492773806.jpg)
 
 **4. headers**
-字l典格式，为请求添加 HTTP 头部信息，模拟浏览器进行访问。headers是解决requests请求反爬的方法之一。 headers中有很多内容，常用的是user-agent 和 host。
+字典格式，为请求添加 HTTP 头部信息，模拟浏览器进行访问。headers是解决requests请求反爬的方法之一。 headers中有很多内容，常用的是user-agent 和 host。
 
 ![img](Python自动化.assets/v2-e38ff9c5ced54cdb451def61a345e813_720w.jpg)
 
@@ -1056,11 +1057,10 @@ HTTP响应正文的编码，它的值可能是从HTTP响应头部或正文中解
    -  获取响应消息: res.content
    -  获取请求头: res.request.headers
    -  获取响应头: res.headers
-   -  获取响应数据 res.text。响应结果一般有三种格式：html、json、text；
-
-   - 获取cookie res.cookies。cookie是一种类字典的数据格式，若想打印字典的值，可以根据key；
-
-   -  res.json()：如果返回结果是json格式，可以把响应结果利用json()来进行解析;
+   - 获取响应数据 res.text。响应结果一般有三种格式：html、json、text；
+- 获取cookie res.cookies。cookie是一种类字典的数据格式，若想打印字典的值，可以根据key；
+   -  
+-  res.json()：如果返回结果是json格式，可以把响应结果利用json()来进行解析;
 
 
 #### 2.requests模块之post请求
@@ -1343,9 +1343,9 @@ print(res.elapsed.resolution)
 ~~~python
 header = {'Connection':'close'}  # 设置HTTP短链接
 
-header = {'Connection':'keep-alive'}  # 设置HTTP长连接，有过期时间
+header = {'Connection':'keep-alive'}  # 设置HTTP长连接，无过期时间
 
-header = {'Connection':'keep-alive', 'Keep-Alive':timeout=60}  # 设置HTTP长连接，无过期时间
+header = {'Connection':'keep-alive', 'Keep-Alive':timeout=60}  # 设置HTTP长连接，有过期时间
 
 ~~~
 
@@ -1408,7 +1408,7 @@ header = {'Connection':'keep-alive', 'Keep-Alive':timeout=60}  # 设置HTTP长�
 
    * 用于判断用例是否执行通过，编写在测试用例中。self.asserEqual（first, second,msg=None）
 
-     * fist——期望值，second——实际结果，msg——用例执行失败触发
+     * fisrst——期望值，second——实际结果，msg——用例执行失败触发
 
    * 断言语法
 
@@ -1439,7 +1439,7 @@ header = {'Connection':'keep-alive', 'Keep-Alive':timeout=60}  # 设置HTTP长�
 
 ### 1.测试用例之间相互依赖
 
-例如：第二条测试用例需要用到第一条测试用例的结果，返回报文等
+例如：第二条测试用例需要用到第一条测试用例的结果，响应报文等
 
 * 将第一条测试用例写在setUp函数中
 * 将第一条测试用例的执行结果保存在全局变量中
@@ -1480,7 +1480,7 @@ class TestHttp(unittest.TestCase):
 * 定位到某个sheet表单， ws=wb['sheet_name']或者wb.get_sheet_by_name('sheet表单名')
 * 定位到某个单元格，ws.cell(行，列)。注意行、列的索引是从1开始的。1即第一行或第一列。
 * 取值，result=ws.cell(行，列).value。
-* 行数，ws.max_row。列数，ws.max_column。
+* 行数，ws.max_row。列数，ws.max_column。# 行列的索引从1开始计数
 
 
 
@@ -2130,11 +2130,11 @@ IParam：整形，消息的IParam参数
 
 ### 2、pytest收集测试用例规则
 
-* 默认从当前目录下收集测试用例。即在哪个目录下运行pytest命令，则从哪个目录下收集，pytest可以递归搜集目录
+* 默认从执行pytest命令的当前目录下收集测试用例。即在哪个目录下运行pytest命令，则从哪个目录下收集，pytest可以递归搜集目录
 * 规则：
   * 测试用例文件命名规则：test\_*.py或\*_test.py
   * 测试用例函数名规则：以test_开头命名
-  * 测试用例类以Test开头，并且测试用例类没有init函数。
+  * 测试用例类以Test开头，并且测试用例类没有`__`init`__`函数。
   * python包规则：需要有`__init__.py`文件
 
 ### 3、对测试用例打标签
@@ -2158,14 +2158,14 @@ IParam：整形，消息的IParam参数
 
 3. 在测试用例方法、测试用例类中引用conftest.py中的fixture。
 
-   * 注意在测试用例模块文件中引用fixture时，不需要将conftest.py文件导入。
+   * 注意在测试用例模块文件中引用fixture函数时，不需要将conftest.py文件导入。
 
    * 给需要用fixture的测试用例/测试类前直接标签标注。**@pytest.mark.usefixture("fixture函数名")**
 
 4. 在conftest.py文件中，fixture函数里有“yeild"作为前置操作、后置操作的分割线。
 
    * yeild可以用来返回fixture函数中的变量、值，用元组/列表的形式返回。
-   * 在测试用例函数中，加入形参-fixture函数名来接收返回值，以便后续调用
+   * 在测试用例函数中，加入形参-fixture函数名-来接收返回值，以便后续调用
 
 * conftest.py文件实例
 
@@ -2185,7 +2185,8 @@ IParam：整形，消息的IParam参数
       #后置操作
       driver.quit()
       
-  @pytest.fixture(scope='function')   #作用域为每一个函数，每个函数均会执行一次本函数。
+  @pytest.fix
+  ture(scope='function')   #作用域为每一个函数，每个函数均会执行一次本函数。
   def refresh_page():
       global driver
       yield  #yield不是不许存在的，当存在后置操作时则需要输入yield分割线
@@ -2193,7 +2194,7 @@ IParam：整形，消息的IParam参数
       driver.refresh()
   ~~~
 
-* 测试用例调用fixture实例
+* 测试用例调用conftest.py文件中的fixture实例
 
   ~~~python
   import pytest  #pytest和unittest不要放在一起用
@@ -2201,7 +2202,7 @@ IParam：整形，消息的IParam参数
   @pytest.mark.usefixtures('access_web')  #在运行测试用例的时候会先去运行access_web函数
   @pytest.mark.usefixtures('refresh_page')    #同理，类下面的每个函数都会执行这个fixture
   class TestLogin():
-      # 传入需要接收返回值的fixture的函数名用来接收返回值。用fixture函数名称作为参数接收conftest.py文件中的函数的返回值。
+      # 用fixture函数名称作为参数接收conftest.py文件中的函数的返回值。
       def test_1_login_success(self, access_web):
           # 步骤：输入用户名密码点击登录
           access_web[1].login(LD.success_data['user'], LD.success_data['password'])
@@ -2223,10 +2224,10 @@ IParam：整形，消息的IParam参数
 
 * 数据驱动自动化测试，相当于实现unittest中的ddt。在自动化测试中，一个测试用例对应一个测试点，通常一组测试数据无法完全覆盖测试范围，所以，需要参数化来传递多组数据。
 
-* 在测试用例的前面加上：**@pytest.mark.paramertize('参数名'，‘列表数据’)**
+* 在测试用例的前面加上：**@pytest.mark.paramertize('参数名'，‘测试数据’)**
   * 在使用`pytest.mark.parametrize()`传递参数化数据时，测试用例本身必须有参数。
-  * 参数名：以字符串的形式标识用例函数的参数，且和用例函数中的参数名必须相同。以逗号分隔的字符串
-  * 列表数据：参数值列表。若有多个形参，列表嵌套元组的形式。一组实参以元组形式存在，包含多组形参的所有实参
+  * 参数名：字符串格式，标识测试用例中的参数名。和测试用例函数中的形参数名必须相同。
+  * 测试数据：以列表或者元组形式传递数据。
 
 ~~~python
 phone_data = [
@@ -2238,6 +2239,7 @@ phone_data = [
 ]
 
 @pytest.mark.parametrize('data1', phone_data)    #pytest模块中不能使用ddt进行测试用例的参数化
+# 测试数据经过装饰器@，会自动脱外套，phone_data经过装饰会变成4条数据，逐条传送给data1，然后逐条执行。相当于执行了4条测试用例
 def test_0_login_user_wrongformat(self, data1, access_web):
     # 步骤：输入用户名密码点击登录
     access_web[1].login(data1['user'], data1['password'])
@@ -2355,17 +2357,39 @@ PASSED
 
 * **方式一：直接打开默认浏览器展示报告（常用）**
 
+  直接渲染allure的测试数据生成测试报告
+
   * allure serve ./result/
 
 * 方式二：从结果生成报告
 
-  - 生成报告
+  生成allure的json格式测试数据
 
+  ~~~python
+  # 执行测试用例生成测试数据，如果已经存在报告，那就先清空，然后再生成新的测试报告，使用命令： --clean-alluredir
+  pytest.main([ '-vs','test.py','--clean-alluredir', '--alluredir', './allure	-results'])	
+  # -alluredir参数的作用是指出生成的报告文件夹， allure-results下放着生成报告的文件
+  ~~~
+  
+  
+  
+  先将allure的测试数据(json)生成测试报告页面(html)，然后通过命令行执行allure  open  测试结果目录。或者直接通过pycharm 打开index.html文件。
+  
+  * 生成报告
+  
+    直接在测试结果目录打开cmd命令行执行
+  
     `allure generate ./result/ -o ./report/ --clean` (覆盖路径加--clean)
-
-  - 打开报告
-
+  
+    ./result/  为allure生成的测试数据路径
+  
+    ./report/  为将测试数据生成测试报告路径
+  
+  * 打开报告
+  
     `allure open -h 127.0.0.1 -p 8883 ./report/`
+  
+  
 
 #### 2、allure测试用例说明
 

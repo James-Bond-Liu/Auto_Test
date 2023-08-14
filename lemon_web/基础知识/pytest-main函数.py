@@ -24,6 +24,10 @@ pytest.main(["-l"])     #打印失败用例的变量值
 pytest.main(["--duration=1"])   #只关心哪些部分是最慢的
 pytest.main(["-h"])     #pytest的帮助选项
 
+# 执行测试用例生成测试数据，如果已经存在报告，那就先清空，然后再生成新的测试报告，使用命令： --clean-alluredir
+pytest.main([ '-vs','test.py','--clean-alluredir', '--alluredir', './allure-results'])
+
+
 pytest.main(["-v", "-m=run_first"])  # 执行标签为‘run_first’的测试用例
 """
     使用-m对用例进行标记，用例需注释@pytest.mark.xxx,将xxx作为参数传入

@@ -8,7 +8,7 @@ import re
 re模块下的match()和search()方法区别：
 match()只匹配string的开始，它是从开始位置进行匹配的，如果string的开始位置不符合，pattern则失败
 search()匹配整个string，直到找到第一个符合pattern的对象
-注意：两个方法均是只匹配一次，若想在一个string中进行多次匹配pattern可以利用pattern循环
+注意：两个方法均是只匹配一次，若想在一个string中进行多次匹配pattern可以利用循环进行匹配
 '''
 #利用“(pattern1)(pattern2)”这种形式可以对pattern进行分组，从而获得某一组的字符串
 m=re.search("(\d+)([a-z]{2,5})","1234abcd")

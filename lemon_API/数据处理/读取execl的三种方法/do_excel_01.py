@@ -17,7 +17,7 @@ class GetTestData():
     def get_test_data(self):
         wb=load_workbook(self.filename)
         ws=wb[self.sheetname]  # 或者通过ws = wb.get_sheet_by_name(‘sheet表单名’)定位到某个表单
-        print(wb.get_sheet_names())  #返回次excel文件中所有的sheet表单名并保存在列表中
+        print(wb.get_sheet_names())  #返回excel文件中所有的sheet表单名并保存在列表中
         test_data=[]
         for i in range(1,ws.max_row+1):
             # sub_data={}
