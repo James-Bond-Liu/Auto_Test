@@ -2,6 +2,7 @@
 # @Time :2020/5/27 19:20
 # @Author : liufei
 # @File :class_number.PY
+import hashlib
 
 b=0.45
 print(type(b))
@@ -26,6 +27,12 @@ print(s+"world") #字符串的拼接，中间无空格。“sworld”
 
 ss=" hello! "
 g=ss.strip()#去除首尾的空格字符。还有rstrip,lstrip,该函数只作用于首尾
+# 字符串加密 hashlib,注意需要先对加密的字符串进行编码转换，否则会报错
+md = hashlib.md5()
+s = 'Ltk123456'
+md.update(s.encode(encoding='utf-8'))  # 对字符串进行编码转换
+md.hexdigest()   # 对字符串进行加密, ab3a7e4cf5f8d34673809b7c1068e496
+
 
 # 格式化输出字符串
 #方法一 format

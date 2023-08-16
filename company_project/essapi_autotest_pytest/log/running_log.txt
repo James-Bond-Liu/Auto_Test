@@ -1,0 +1,25 @@
+HESS 2023-08-15 16:41:37 INFO run.py 测试报告、测试日志等数据已清理完毕
+HESS 2023-08-15 16:41:37 INFO run.py 开始执行接口测试，开始时间2023-08-15 16:41:37.927337
+HESS 2023-08-15 16:41:42 INFO get_all_testdata.py 路径G:\Pycharm_project\essapi_autotest\data下的所有文件为['测试流程1.xlsx']
+HESS 2023-08-15 16:41:42 INFO get_all_testdata.py 开始读取Excel文件测试流程1.xlsx的测试数据
+HESS 2023-08-15 16:41:43 INFO get_all_testdata.py 文件测试流程1.xlsx中有工作簿['Sheet1']
+HESS 2023-08-15 16:41:43 INFO get_all_testdata.py 正在获取Excel文件测试流程1.xlsx的Sheet1sheet表单数据
+HESS 2023-08-15 16:41:43 INFO get_all_testdata.py 目录下G:\Pycharm_project\essapi_autotest\data的所有测试数据已经全部获取完成
+HESS 2023-08-15 16:41:43 DEBUG test_api.py 测试用例---登录系统存在parameters
+HESS 2023-08-15 16:41:43 INFO test_api.py **********测试用例【登录系统】，开始请求接口**********
+HESS 2023-08-15 16:41:43 DEBUG test_api.py 测试用例---登录系统的请求地址：https://sandbox.hxgroup.com/nbp/login/operator
+HESS 2023-08-15 16:41:43 DEBUG test_api.py 测试用例---登录系统的请求参数：{"login_account":"admin618","password":"b71ba87da2b0ba25599c8173f4946430","language":"en","image_code":"cvgdf","image_id":"1wt5nqwzupkw","device_type":0}
+HESS 2023-08-15 16:41:59 INFO test_api.py **********测试用例【登录系统】，接口请求完成**********
+HESS 2023-08-15 16:41:59 DEBUG test_api.py 测试用例---登录系统的请求头：{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '164'}
+HESS 2023-08-15 16:41:59 DEBUG test_api.py 测试用例---登录系统响应报文返回token：Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjUyMTY2ODM5NDU1NzQ1LCJleHAiOjE2OTQ2ODA5MTksImlhdCI6MTY5MjA4ODkxOSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.DTJQewg9k1enWaNJqx2w2nX6L8GV495MEcTkGT1PwopLB89OaXQvByiFmo2KA3CTYtoPIkWnQ_Hi4Xgp0470wg
+HESS 2023-08-15 16:41:59 DEBUG test_api.py 测试用例---登录系统响应报文未携带cookie
+HESS 2023-08-15 16:41:59 INFO test_api.py 测试用例---登录系统status_code为200校验通过
+HESS 2023-08-15 16:41:59 INFO test_api.py 测试用例---登录系统的响应报文为{'msg_code': 'operate.success', 'data': {'id': 252166839455744, 'insert_time': 1692088919293, 'remote_addr': '114.222.229.231', 'local': 'en', 'state': 'normal', 'type': 'operator', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjUyMTY2ODM5NDU1NzQ1LCJleHAiOjE2OTQ2ODA5MTksImlhdCI6MTY5MjA4ODkxOSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.DTJQewg9k1enWaNJqx2w2nX6L8GV495MEcTkGT1PwopLB89OaXQvByiFmo2KA3CTYtoPIkWnQ_Hi4Xgp0470wg', 'operating_system': 'Unknown', 'browser_name': 'Robot/Spider', 'browser_version': '', 'session_expiry_time': 1694680919292, 'owner': {'id': 0, 'insert_time': 1612069155218, 'update_time': 1689817073631, 'no': 'customer-000000000000000', 'name': 'admin', 'state': 'normal', 'email': 'admin1111112221@qq.com', 'mobile': '12345678921', 'login_account': 'admin618', 'telephone': '18857886948', 'org_id': 0, 'role_id': 0, 'org_name': 'Livoltek', 'role_name': 'Super Administrator', 'org_code': 'Livoltek'}}}
+HESS 2023-08-15 16:41:59 INFO test_api.py 测试用例---登录系统msg_code为operate.success
+HESS 2023-08-15 16:41:59 INFO test_api.py 测试流程1.xlsx--Sheet1---测试用例---登录系统测试结果为Pass
+HESS 2023-08-15 16:41:59 DEBUG test_api.py 登录系统响应报文{'msg_code': 'operate.success', 'data': {'id': 252166839455744, 'insert_time': 1692088919293, 'remote_addr': '114.222.229.231', 'local': 'en', 'state': 'normal', 'type': 'operator', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjUyMTY2ODM5NDU1NzQ1LCJleHAiOjE2OTQ2ODA5MTksImlhdCI6MTY5MjA4ODkxOSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.DTJQewg9k1enWaNJqx2w2nX6L8GV495MEcTkGT1PwopLB89OaXQvByiFmo2KA3CTYtoPIkWnQ_Hi4Xgp0470wg', 'operating_system': 'Unknown', 'browser_name': 'Robot/Spider', 'browser_version': '', 'session_expiry_time': 1694680919292, 'owner': {'id': 0, 'insert_time': 1612069155218, 'update_time': 1689817073631, 'no': 'customer-000000000000000', 'name': 'admin', 'state': 'normal', 'email': 'admin1111112221@qq.com', 'mobile': '12345678921', 'login_account': 'admin618', 'telephone': '18857886948', 'org_id': 0, 'role_id': 0, 'org_name': 'Livoltek', 'role_name': 'Super Administrator', 'org_code': 'Livoltek'}}}已存档
+HESS 2023-08-15 16:41:59 DEBUG test_api.py 登录系统的测试结果Pass已存档
+HESS 2023-08-15 16:41:59 INFO test_api.py **********测试用例【commonUI】，开始请求接口**********
+HESS 2023-08-15 16:41:59 DEBUG test_api.py 测试用例---commonUI的请求地址：https://sandbox.hxgroup.com/ctrller-manager/i18n/commonUI
+HESS 2023-08-15 16:41:59 DEBUG test_api.py 测试用例---commonUI的请求参数：None
+HESS 2023-08-15 16:43:19 INFO run.py 完成接口测试，结束时间2023-08-15 16:43:19.227688，共耗时0:01:41.300351s
