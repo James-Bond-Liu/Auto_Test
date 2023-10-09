@@ -1,0 +1,14 @@
+HESS 2023-10-09 14:31:20 DEBUG test_api.py 测试用例---inverterColumnShow的请求头：{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDYzODQyMzA1LCJleHAiOjE2OTk0MjUwNzksImlhdCI6MTY5NjgzMzA3OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.m2o0IFw6UA90X_pdnkLptAMg1Tm7tk8ZXVFHZtKWnyojaI9NbS2ILiCPpSIxmNdFhiMpXhpgPtJc5TsarS-MLw'}
+HESS 2023-10-09 14:31:20 INFO test_api.py **********测试用例【inverterColumnShow】，开始请求接口**********
+HESS 2023-10-09 14:31:20 DEBUG test_api.py 测试用例---inverterColumnShow的请求地址：http://192.168.108.160:8080/ctrller-manager/operator/inverterColumnShow
+HESS 2023-10-09 14:31:20 DEBUG test_api.py 测试用例---inverterColumnShow的请求参数：None
+HESS 2023-10-09 14:31:20 INFO test_api.py **********测试用例【inverterColumnShow】，接口请求完成**********
+HESS 2023-10-09 14:31:20 DEBUG test_api.py 测试用例---inverterColumnShow的请求头：{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDYzODQyMzA1LCJleHAiOjE2OTk0MjUwNzksImlhdCI6MTY5NjgzMzA3OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.m2o0IFw6UA90X_pdnkLptAMg1Tm7tk8ZXVFHZtKWnyojaI9NbS2ILiCPpSIxmNdFhiMpXhpgPtJc5TsarS-MLw'}
+HESS 2023-10-09 14:31:20 DEBUG test_api.py 测试用例---inverterColumnShow响应报文没有【data】字段
+HESS 2023-10-09 14:31:20 DEBUG test_api.py 测试用例---inverterColumnShow响应报文未携带cookie
+HESS 2023-10-09 14:31:20 INFO test_api.py 测试用例---inverterColumnShowstatus_code为200校验通过
+HESS 2023-10-09 14:31:20 INFO test_api.py 测试用例---inverterColumnShow的响应报文为{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-09 14:31:20 INFO test_api.py 测试用例---inverterColumnShowmsg_code为operate.success
+HESS 2023-10-09 14:31:20 INFO test_api.py ess_data.xlsx--设备管理---测试用例---inverterColumnShow测试结果为Pass
+HESS 2023-10-09 14:31:20 DEBUG test_api.py inverterColumnShow响应报文{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-09 14:31:20 DEBUG test_api.py inverterColumnShow的测试结果Pass已存档

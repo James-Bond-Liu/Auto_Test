@@ -1,0 +1,17 @@
+HESS 2023-10-09 14:31:12 DEBUG test_api.py B端修改设备：SELECT id from hess.scada_energy_storage where inverter_sn="AutoTest_sn1" and is_delete=0;
+HESS 2023-10-09 14:31:12 DEBUG test_api.py 测试用例---B端修改设备的GlobalDataenergystorage_id=8
+HESS 2023-10-09 14:31:12 DEBUG test_api.py 测试用例---B端修改设备存在parameters
+HESS 2023-10-09 14:31:12 DEBUG test_api.py 测试用例---B端修改设备的请求头：{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0xem93ZGR0cGo4cW8iLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDQ0OTY3OTM3LCJleHAiOjE2OTk0MjUwNzAsImlhdCI6MTY5NjgzMzA3MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.5V0i7TWdSEfWuqN7FxONZJdXIcTLByHp26Zsh5GA1IKD3EtTHXtPuCblcri539xxgLOiHu_wr345GrOwhcL6dw'}
+HESS 2023-10-09 14:31:12 INFO test_api.py **********测试用例【B端修改设备】，开始请求接口**********
+HESS 2023-10-09 14:31:12 DEBUG test_api.py 测试用例---B端修改设备的请求地址：http://192.168.108.160:8080/ctrller-manager/energystorage/update
+HESS 2023-10-09 14:31:12 DEBUG test_api.py 测试用例---B端修改设备的请求参数：{"id":8,"name":"AutoTestDemo1(HP3-3KD1)","pvstring":[]}
+HESS 2023-10-09 14:31:12 INFO test_api.py **********测试用例【B端修改设备】，接口请求完成**********
+HESS 2023-10-09 14:31:12 DEBUG test_api.py 测试用例---B端修改设备的请求头：{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0xem93ZGR0cGo4cW8iLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDQ0OTY3OTM3LCJleHAiOjE2OTk0MjUwNzAsImlhdCI6MTY5NjgzMzA3MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.5V0i7TWdSEfWuqN7FxONZJdXIcTLByHp26Zsh5GA1IKD3EtTHXtPuCblcri539xxgLOiHu_wr345GrOwhcL6dw', 'Content-Length': '60'}
+HESS 2023-10-09 14:31:12 DEBUG test_api.py 测试用例---B端修改设备响应报文没有【data】字段
+HESS 2023-10-09 14:31:12 DEBUG test_api.py 测试用例---B端修改设备响应报文未携带cookie
+HESS 2023-10-09 14:31:12 INFO test_api.py 测试用例---B端修改设备status_code为200校验通过
+HESS 2023-10-09 14:31:12 INFO test_api.py 测试用例---B端修改设备的响应报文为{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-09 14:31:12 INFO test_api.py 测试用例---B端修改设备msg_code为operate.success
+HESS 2023-10-09 14:31:12 INFO test_api.py ess_data.xlsx--正常流程---测试用例---B端修改设备测试结果为Pass
+HESS 2023-10-09 14:31:12 DEBUG test_api.py B端修改设备响应报文{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-09 14:31:12 DEBUG test_api.py B端修改设备的测试结果Pass已存档

@@ -1,0 +1,17 @@
+DEBUG    HESS:test_api.py:29 修改B端组织：select code from uap_2c.nbp_organization where name="AutoTest_org";
+DEBUG    HESS:test_api.py:34 测试用例---修改B端组织的GlobalDataorganization_code=BT00288FRA
+DEBUG    HESS:test_api.py:38 测试用例---修改B端组织存在parameters
+DEBUG    HESS:test_api.py:48 测试用例---修改B端组织的请求头：{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDM4Njc2NDgxLCJleHAiOjE2OTk0MjUwNjcsImlhdCI6MTY5NjgzMzA2Nywib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.7310ee3QnhQRveXhZ7zYNrUqfdDcCQwlxGtqumsbOdb9TK5N10l-BI88d211s2DxIxGSnb1er-WgQZdup1TpIg'}
+INFO     HESS:test_api.py:50 **********测试用例【修改B端组织】，开始请求接口**********
+DEBUG    HESS:test_api.py:51 测试用例---修改B端组织的请求地址：http://192.168.108.160:8080/ctrller-manager/organization/updateOrganization
+DEBUG    HESS:test_api.py:52 测试用例---修改B端组织的请求参数：{"name":"AutoTest_org","email":"AutoTest_org@qq.com","code":"BT00288FRA","countryId":2,"parentId":0,"parent_name":"Livoltek(Livoltek)","orgType":"0","address":"","description":"自动化测试专用","id":262116011413504}
+INFO     HESS:test_api.py:56 **********测试用例【修改B端组织】，接口请求完成**********
+DEBUG    HESS:test_api.py:57 测试用例---修改B端组织的请求头：{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDM4Njc2NDgxLCJleHAiOjE2OTk0MjUwNjcsImlhdCI6MTY5NjgzMzA2Nywib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.7310ee3QnhQRveXhZ7zYNrUqfdDcCQwlxGtqumsbOdb9TK5N10l-BI88d211s2DxIxGSnb1er-WgQZdup1TpIg', 'Content-Length': '261'}
+DEBUG    HESS:test_api.py:68 测试用例---修改B端组织响应报文没有【data】字段
+DEBUG    HESS:test_api.py:73 测试用例---修改B端组织响应报文未携带cookie
+INFO     HESS:test_api.py:76 测试用例---修改B端组织status_code为200校验通过
+INFO     HESS:test_api.py:77 测试用例---修改B端组织的响应报文为{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+INFO     HESS:test_api.py:86 测试用例---修改B端组织msg_code为operate.success
+INFO     HESS:test_api.py:116 ess_data.xlsx--正常流程---测试用例---修改B端组织测试结果为Pass
+DEBUG    HESS:test_api.py:129 修改B端组织响应报文{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+DEBUG    HESS:test_api.py:132 修改B端组织的测试结果Pass已存档

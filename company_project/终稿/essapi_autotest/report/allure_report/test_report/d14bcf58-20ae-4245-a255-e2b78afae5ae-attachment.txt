@@ -1,0 +1,15 @@
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 测试用例---添加SN号存在parameters
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 测试用例---添加SN号的请求头：{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDA5MzE2MzUzLCJleHAiOjE2OTk0MjUwNTMsImlhdCI6MTY5NjgzMzA1Mywib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.mpT59BShA0FHsSeG8b3uMjb5EZ0o7ApO4VRq7MYprMT10Ge-Eh9NEggRQZzytfLK6UxLp7blFyFIhiywBsDJHQ'}
+HESS 2023-10-09 14:31:07 INFO test_api.py **********测试用例【添加SN号】，开始请求接口**********
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 测试用例---添加SN号的请求地址：http://192.168.108.160:8080/ctrller-manager/productType/insertSN
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 测试用例---添加SN号的请求参数：{"id":102,"snList":["AutoTest_sn1"],"accessoryNo":"","remark":""}
+HESS 2023-10-09 14:31:07 INFO test_api.py **********测试用例【添加SN号】，接口请求完成**********
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 测试用例---添加SN号的请求头：{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDA5MzE2MzUzLCJleHAiOjE2OTk0MjUwNTMsImlhdCI6MTY5NjgzMzA1Mywib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.mpT59BShA0FHsSeG8b3uMjb5EZ0o7ApO4VRq7MYprMT10Ge-Eh9NEggRQZzytfLK6UxLp7blFyFIhiywBsDJHQ', 'Content-Length': '72'}
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 测试用例---添加SN号响应报文没有【data】字段
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 测试用例---添加SN号响应报文未携带cookie
+HESS 2023-10-09 14:31:07 INFO test_api.py 测试用例---添加SN号status_code为200校验通过
+HESS 2023-10-09 14:31:07 INFO test_api.py 测试用例---添加SN号的响应报文为{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-09 14:31:07 INFO test_api.py 测试用例---添加SN号msg_code为operate.success
+HESS 2023-10-09 14:31:07 INFO test_api.py ess_data.xlsx--准备数据---测试用例---添加SN号测试结果为Pass
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 添加SN号响应报文{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-09 14:31:07 DEBUG test_api.py 添加SN号的测试结果Pass已存档

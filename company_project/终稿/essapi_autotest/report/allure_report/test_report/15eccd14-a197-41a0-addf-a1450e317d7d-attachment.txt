@@ -1,0 +1,16 @@
+DEBUG    HESS:test_api.py:38 测试用例---创建C端用户存在parameters
+DEBUG    HESS:test_api.py:48 测试用例---创建C端用户的请求头：{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDA5MzE2MzUzLCJleHAiOjE2OTk0MjUwNTMsImlhdCI6MTY5NjgzMzA1Mywib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.mpT59BShA0FHsSeG8b3uMjb5EZ0o7ApO4VRq7MYprMT10Ge-Eh9NEggRQZzytfLK6UxLp7blFyFIhiywBsDJHQ'}
+INFO     HESS:test_api.py:50 **********测试用例【创建C端用户】，开始请求接口**********
+DEBUG    HESS:test_api.py:51 测试用例---创建C端用户的请求地址：http://192.168.108.160:8080/ctrller-manager/customer/customerRegister?envirId=5
+DEBUG    HESS:test_api.py:52 测试用例---创建C端用户的请求参数：{"countryId":26,"email":"AutoTest_user@qq.com","extend":"","loginAccount":"AutoTest_user","mobile":"","name":"","telephone":"","password":"ab3a7e4cf5f8d34673809b7c1068e496","registerType":2,"registerSource":"3","orgNo":"1","type":"0"}
+INFO     HESS:test_api.py:56 **********测试用例【创建C端用户】，接口请求完成**********
+DEBUG    HESS:test_api.py:57 测试用例---创建C端用户的请求头：{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDA5MzE2MzUzLCJleHAiOjE2OTk0MjUwNTMsImlhdCI6MTY5NjgzMzA1Mywib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.mpT59BShA0FHsSeG8b3uMjb5EZ0o7ApO4VRq7MYprMT10Ge-Eh9NEggRQZzytfLK6UxLp7blFyFIhiywBsDJHQ', 'Content-Length': '257'}
+DEBUG    HESS:test_api.py:66 测试用例---创建C端用户响应报文没有返回token
+DEBUG    HESS:test_api.py:73 测试用例---创建C端用户响应报文未携带cookie
+INFO     HESS:test_api.py:76 测试用例---创建C端用户status_code为200校验通过
+INFO     HESS:test_api.py:77 测试用例---创建C端用户的响应报文为{'data': {'countryId': '26', 'description': None, 'email': 'AutoTest_user@qq.com', 'extend': '', 'invitationCode': None, 'loginAccount': 'AutoTest_user', 'mobile': '', 'name': '', 'orgNo': '1', 'password': 'ab3a7e4cf5f8d34673809b7c1068e496', 'registerSource': '3', 'registerType': '2', 'telephone': '', 'type': '0', 'verify_code': None}, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+INFO     HESS:test_api.py:86 测试用例---创建C端用户msg_code为operate.success
+DEBUG    HESS:test_api.py:96 测试用例---创建C端用户的GlobalDatacustomer_id=262116026093568
+INFO     HESS:test_api.py:116 ess_data.xlsx--准备数据---测试用例---创建C端用户测试结果为Pass
+DEBUG    HESS:test_api.py:129 创建C端用户响应报文{'data': {'countryId': '26', 'description': None, 'email': 'AutoTest_user@qq.com', 'extend': '', 'invitationCode': None, 'loginAccount': 'AutoTest_user', 'mobile': '', 'name': '', 'orgNo': '1', 'password': 'ab3a7e4cf5f8d34673809b7c1068e496', 'registerSource': '3', 'registerType': '2', 'telephone': '', 'type': '0', 'verify_code': None}, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+DEBUG    HESS:test_api.py:132 创建C端用户的测试结果Pass已存档
