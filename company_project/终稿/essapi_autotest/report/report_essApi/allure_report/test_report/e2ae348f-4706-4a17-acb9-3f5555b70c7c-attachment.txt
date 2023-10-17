@@ -1,0 +1,16 @@
+DEBUG    HESS:test_essApi.py:42 测试用例::getToBSample的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODE1OTA0MjU3LCJleHAiOjE3MDAxMTgyODIsImlhdCI6MTY5NzUyNjI4Miwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.ENqmMb1hi95fn8fCEWICL97j9dHl-LEiAz_pcazIEOkoqHZCAfCWosMgeASSzntGo5jDXxWGkZSjcYT0Om22IQ'}
+INFO     HESS:test_essApi.py:45 **********测试用例【getToBSample】，开始请求接口**********
+DEBUG    HESS:test_essApi.py:46 测试用例::getToBSample的请求地址::http://192.168.108.160:8080/ctrller-manager/sample/getToBSample
+DEBUG    HESS:test_essApi.py:47 测试用例::getToBSample的请求方法::post
+DEBUG    HESS:test_essApi.py:53 测试用例::getToBSample的request_parameters::{"timeType":1,"id":0,"objectType":2,"startTime":"2023-08-01 00:00:00","endTime":"2023-08-31 00:00:00"}
+INFO     HESS:test_essApi.py:75 **********测试用例【getToBSample】，接口请求完成**********
+DEBUG    HESS:test_essApi.py:76 测试用例::getToBSample的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODE1OTA0MjU3LCJleHAiOjE3MDAxMTgyODIsImlhdCI6MTY5NzUyNjI4Miwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.ENqmMb1hi95fn8fCEWICL97j9dHl-LEiAz_pcazIEOkoqHZCAfCWosMgeASSzntGo5jDXxWGkZSjcYT0Om22IQ', 'Content-Length': '111'}
+DEBUG    HESS:test_essApi.py:77 测试用例::getToBSample的响应报文::{'data': [[]], 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+DEBUG    HESS:test_essApi.py:85 测试用例::getToBSample没有返回token
+DEBUG    HESS:test_essApi.py:92 测试用例::getToBSample没有返回cookie
+INFO     HESS:test_essApi.py:95 测试用例::getToBSamplestatus_code::200符合预期结果::200
+INFO     HESS:test_essApi.py:105 测试用例::getToBSample的msg_code::operate.success
+DEBUG    HESS:test_essApi.py:133 ess_data.xlsx::首页::测试用例::getToBSample不进行数据库比对
+INFO     HESS:test_essApi.py:134 ess_data.xlsx::首页::测试用例::getToBSample测试结果::Pass
+INFO     HESS:test_essApi.py:146 getToBSample响应报文::{'data': [[]], 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+INFO     HESS:test_essApi.py:148 getToBSample的测试结果::Pass已存档

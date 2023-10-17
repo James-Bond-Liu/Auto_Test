@@ -1,5 +1,0 @@
-HESS 2023-10-09 14:31:22 DEBUG test_api.py 测试用例---evChargingColumnShow的请求头：{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMTE2MDYzODQyMzA1LCJleHAiOjE2OTk0MjUwNzksImlhdCI6MTY5NjgzMzA3OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.m2o0IFw6UA90X_pdnkLptAMg1Tm7tk8ZXVFHZtKWnyojaI9NbS2ILiCPpSIxmNdFhiMpXhpgPtJc5TsarS-MLw'}
-HESS 2023-10-09 14:31:22 INFO test_api.py **********测试用例【evChargingColumnShow】，开始请求接口**********
-HESS 2023-10-09 14:31:22 DEBUG test_api.py 测试用例---evChargingColumnShow的请求地址：http://192.168.108.160: 8080/ctrller-manager/operator/evChargingColumnShow
-HESS 2023-10-09 14:31:22 DEBUG test_api.py 测试用例---evChargingColumnShow的请求参数：None
-HESS 2023-10-09 14:31:22 ERROR http_request.py 请求出错了Failed to parse: http://192.168.108.160: 8080/ctrller-manager/operator/evChargingColumnShow

@@ -1,0 +1,17 @@
+HESS 2023-10-17 15:04:31 DEBUG test_essApi.py 测试用例::创建C端用户的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5NzY5NzY2OTEzLCJleHAiOjE3MDAxMTgyNjAsImlhdCI6MTY5NzUyNjI2MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.4anO9fLGMygeDfq1ir_KdW_6QcCUMNkpN_y5TmdTx66xyBZCb6-dEgQAcGgvigKUz5tcrQ4kVT1KBgxA5PUynw'}
+HESS 2023-10-17 15:04:31 INFO test_essApi.py **********测试用例【创建C端用户】，开始请求接口**********
+HESS 2023-10-17 15:04:31 DEBUG test_essApi.py 测试用例::创建C端用户的请求地址::http://192.168.108.160:8080/ctrller-manager/customer/customerRegister?envirId=5
+HESS 2023-10-17 15:04:31 DEBUG test_essApi.py 测试用例::创建C端用户的请求方法::post
+HESS 2023-10-17 15:04:31 DEBUG test_essApi.py 测试用例::创建C端用户的request_parameters::{"countryId":26,"email":"AutoTest_user@qq.com","extend":"","loginAccount":"AutoTest_user","mobile":"","name":"","telephone":"","password":"ab3a7e4cf5f8d34673809b7c1068e496","registerType":2,"registerSource":"3","orgNo":"1","type":"0"}
+HESS 2023-10-17 15:04:36 INFO test_essApi.py **********测试用例【创建C端用户】，接口请求完成**********
+HESS 2023-10-17 15:04:36 DEBUG test_essApi.py 测试用例::创建C端用户的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5NzY5NzY2OTEzLCJleHAiOjE3MDAxMTgyNjAsImlhdCI6MTY5NzUyNjI2MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.4anO9fLGMygeDfq1ir_KdW_6QcCUMNkpN_y5TmdTx66xyBZCb6-dEgQAcGgvigKUz5tcrQ4kVT1KBgxA5PUynw', 'Content-Length': '257'}
+HESS 2023-10-17 15:04:36 DEBUG test_essApi.py 测试用例::创建C端用户的响应报文::{'data': {'countryId': '26', 'description': None, 'email': 'AutoTest_user@qq.com', 'extend': '', 'invitationCode': None, 'loginAccount': 'AutoTest_user', 'mobile': '', 'name': '', 'orgNo': '1', 'password': 'ab3a7e4cf5f8d34673809b7c1068e496', 'registerSource': '3', 'registerType': '2', 'telephone': '', 'type': '0', 'verify_code': None}, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-17 15:04:36 DEBUG test_essApi.py 测试用例::创建C端用户没有返回token
+HESS 2023-10-17 15:04:36 DEBUG test_essApi.py 测试用例::创建C端用户没有返回cookie
+HESS 2023-10-17 15:04:36 INFO test_essApi.py 测试用例::创建C端用户status_code::200符合预期结果::200
+HESS 2023-10-17 15:04:36 INFO test_essApi.py 测试用例::创建C端用户的msg_code::operate.success
+HESS 2023-10-17 15:04:36 DEBUG test_essApi.py 测试用例::创建C端用户的全局变量::customer_id==263569792835584
+HESS 2023-10-17 15:04:36 DEBUG test_essApi.py ess_data.xlsx::准备数据::测试用例::创建C端用户不进行数据库比对
+HESS 2023-10-17 15:04:36 INFO test_essApi.py ess_data.xlsx::准备数据::测试用例::创建C端用户测试结果::Pass
+HESS 2023-10-17 15:04:36 INFO test_essApi.py 创建C端用户响应报文::{'data': {'countryId': '26', 'description': None, 'email': 'AutoTest_user@qq.com', 'extend': '', 'invitationCode': None, 'loginAccount': 'AutoTest_user', 'mobile': '', 'name': '', 'orgNo': '1', 'password': 'ab3a7e4cf5f8d34673809b7c1068e496', 'registerSource': '3', 'registerType': '2', 'telephone': '', 'type': '0', 'verify_code': None}, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-17 15:04:36 INFO test_essApi.py 创建C端用户的测试结果::Pass已存档

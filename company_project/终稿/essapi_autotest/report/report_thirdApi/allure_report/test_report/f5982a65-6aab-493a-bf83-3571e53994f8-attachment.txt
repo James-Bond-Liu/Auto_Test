@@ -1,0 +1,22 @@
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion的请求头::{'Content-Type': 'application/json', 'authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoIiwiZXhwIjoxNjk3NTY4NjcyLCJ1c2VyIjoie1wiaWRcIjpcIjQ4OTRlNTU3OTFmODQ3YjJiYmQ5NTM4YTZiMjhjNzg5XCIsXCJrZXlcIjpcInJ4MXRmT215UEhhcCtkaml5NkNNNGpwYjBIU0N2djBSL2JadFJQSTdRM3p0aWVuejBLL1diWTV2SjdVU3ZxN2NcXHJcXG5cIixcIm5hbWVcIjpcIkF1dG9UZXN0X3VzZXJcIixcInNlY3VpZFwiOlwiNmU3ZDJiODFhZmJhNDU2Mjk0YWJlNTMwODRiYWViZmJcIixcInN0YXR1c1wiOjAsXCJ0eXBlXCI6XCIwXCJ9In0.1ruOpAe17cXBCAQaC1by07K08-G_A1jHkGfKnDH4s18'}
+HESS 2023-10-17 14:51:20 INFO test_thirdApi.py **********测试用例【Charging station deletion】，开始请求接口**********
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion的请求地址::http://192.168.108.160:8081/hess/api/chargeSite/disable
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion的请求方法::post
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion的query_parameters::{"userType":1,"userToken":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYyMzI0MzI1NzIwMDY0LCJleHAiOjQwOTUzMDk5NzIsImlhdCI6MTY5NjkzMjM4Niwib3duZXJfdHlwZSI6InRlbXBvcmFyeSIsImxvY2FsIjoiZW4ifQ.nf7enaHsUz7v9Ik29Ck1u_D3OOM4m8OLKuAVITBq45agiqerivjBMgKtMoGV1Gz__Kcp4MZ_U30taJWEhuiD3g"}
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion的request_parameters::{
+  "account": "admin",
+  "pwd": "b71ba87da2b0ba25599c8173f4946430",
+  "id":  40
+}
+HESS 2023-10-17 14:51:20 INFO test_thirdApi.py **********测试用例【Charging station deletion】，接口请求完成**********
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoIiwiZXhwIjoxNjk3NTY4NjcyLCJ1c2VyIjoie1wiaWRcIjpcIjQ4OTRlNTU3OTFmODQ3YjJiYmQ5NTM4YTZiMjhjNzg5XCIsXCJrZXlcIjpcInJ4MXRmT215UEhhcCtkaml5NkNNNGpwYjBIU0N2djBSL2JadFJQSTdRM3p0aWVuejBLL1diWTV2SjdVU3ZxN2NcXHJcXG5cIixcIm5hbWVcIjpcIkF1dG9UZXN0X3VzZXJcIixcInNlY3VpZFwiOlwiNmU3ZDJiODFhZmJhNDU2Mjk0YWJlNTMwODRiYWViZmJcIixcInN0YXR1c1wiOjAsXCJ0eXBlXCI6XCIwXCJ9In0.1ruOpAe17cXBCAQaC1by07K08-G_A1jHkGfKnDH4s18', 'Content-Length': '73'}
+HESS 2023-10-17 14:51:20 INFO test_thirdApi.py 测试用例::Charging station deletion的响应报文::{'code': '200', 'message': 'SUCCESS'}
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion没有返回cookie
+HESS 2023-10-17 14:51:20 INFO test_thirdApi.py 测试用例::Charging station deletionstatus_code::200符合预期结果::200
+HESS 2023-10-17 14:51:20 INFO test_thirdApi.py 测试用例::Charging station deletion响应报文中不包含msg_code信息，其message信息::SUCCESS，符合预期结果
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion进行数据库校验，校验sql::('hess','demo','select is_delete from hess.scada_power_station where name="thirdApi_充电桩" and id=40 and system_type=3;')
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py 测试用例::Charging station deletion查询数据库结果::1，期望结果::1
+HESS 2023-10-17 14:51:20 INFO test_thirdApi.py api_data.xlsx::第三方API::测试用例::Charging station deletion数据库比对::成功
+HESS 2023-10-17 14:51:20 INFO test_thirdApi.py api_data.xlsx::第三方API::测试用例::Charging station deletion测试结果::Pass
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py Charging station deletion响应报文::{'code': '200', 'message': 'SUCCESS'}已存档
+HESS 2023-10-17 14:51:20 DEBUG test_thirdApi.py Charging station deletion的测试结果::Pass已存档

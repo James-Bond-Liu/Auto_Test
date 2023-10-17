@@ -1,0 +1,14 @@
+DEBUG    HESS:test_essApi.py:42 测试用例::B端删除电站的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMDM3b3E1bXZqc3ciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODM0Nzc4NjI4LCJleHAiOjE3MDAxMTgyOTEsImlhdCI6MTY5NzUyNjI5MSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.zYkQmh2oREq8aURv9w4AeBEc8vj9iFxBJbcV015WsvJY5BA7Sk9Ob7rXlzBQePD40cqlXBaXBmHxyrWOrz6vlw'}
+INFO     HESS:test_essApi.py:45 **********测试用例【B端删除电站】，开始请求接口**********
+DEBUG    HESS:test_essApi.py:46 测试用例::B端删除电站的请求地址::http://192.168.108.160:8080/ctrller-manager/powerstation/disable?id=41
+DEBUG    HESS:test_essApi.py:47 测试用例::B端删除电站的请求方法::post
+INFO     HESS:test_essApi.py:75 **********测试用例【B端删除电站】，接口请求完成**********
+DEBUG    HESS:test_essApi.py:76 测试用例::B端删除电站的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMDM3b3E1bXZqc3ciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODM0Nzc4NjI4LCJleHAiOjE3MDAxMTgyOTEsImlhdCI6MTY5NzUyNjI5MSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.zYkQmh2oREq8aURv9w4AeBEc8vj9iFxBJbcV015WsvJY5BA7Sk9Ob7rXlzBQePD40cqlXBaXBmHxyrWOrz6vlw', 'Content-Length': '0'}
+DEBUG    HESS:test_essApi.py:77 测试用例::B端删除电站的响应报文::{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+DEBUG    HESS:test_essApi.py:92 测试用例::B端删除电站没有返回cookie
+INFO     HESS:test_essApi.py:95 测试用例::B端删除电站status_code::200符合预期结果::200
+INFO     HESS:test_essApi.py:105 测试用例::B端删除电站的msg_code::operate.success
+DEBUG    HESS:test_essApi.py:133 ess_data.xlsx::清理数据::测试用例::B端删除电站不进行数据库比对
+INFO     HESS:test_essApi.py:134 ess_data.xlsx::清理数据::测试用例::B端删除电站测试结果::Pass
+INFO     HESS:test_essApi.py:146 B端删除电站响应报文::{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+INFO     HESS:test_essApi.py:148 B端删除电站的测试结果::Pass已存档

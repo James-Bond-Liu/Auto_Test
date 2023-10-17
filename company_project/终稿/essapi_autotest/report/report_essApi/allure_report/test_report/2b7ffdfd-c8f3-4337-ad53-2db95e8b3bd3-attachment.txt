@@ -1,0 +1,16 @@
+DEBUG    HESS:test_essApi.py:33 测试用例::B端修改设备-逆变器的全局变量::energystorage_id==47
+DEBUG    HESS:test_essApi.py:42 测试用例::B端修改设备-逆变器的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMDM3b3E1bXZqc3ciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODExNzA5OTU0LCJleHAiOjE3MDAxMTgyODAsImlhdCI6MTY5NzUyNjI4MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.Gz2aBQjN2trMzLlft4EtQBOFL6IP6gvh31Ry9YEy87_iaHTus3w8SUgpSoYcSmcCoG0HFO_-8mtCCsKFWUb5Ew'}
+INFO     HESS:test_essApi.py:45 **********测试用例【B端修改设备-逆变器】，开始请求接口**********
+DEBUG    HESS:test_essApi.py:46 测试用例::B端修改设备-逆变器的请求地址::http://192.168.108.160:8080/ctrller-manager/energystorage/update
+DEBUG    HESS:test_essApi.py:47 测试用例::B端修改设备-逆变器的请求方法::post
+DEBUG    HESS:test_essApi.py:53 测试用例::B端修改设备-逆变器的request_parameters::{"id":47,"name":"AutoTestDemo1(HP3-3KD1)","pvstring":[]}
+INFO     HESS:test_essApi.py:75 **********测试用例【B端修改设备-逆变器】，接口请求完成**********
+DEBUG    HESS:test_essApi.py:76 测试用例::B端修改设备-逆变器的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMDM3b3E1bXZqc3ciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODExNzA5OTU0LCJleHAiOjE3MDAxMTgyODAsImlhdCI6MTY5NzUyNjI4MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.Gz2aBQjN2trMzLlft4EtQBOFL6IP6gvh31Ry9YEy87_iaHTus3w8SUgpSoYcSmcCoG0HFO_-8mtCCsKFWUb5Ew', 'Content-Length': '61'}
+DEBUG    HESS:test_essApi.py:77 测试用例::B端修改设备-逆变器的响应报文::{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+DEBUG    HESS:test_essApi.py:92 测试用例::B端修改设备-逆变器没有返回cookie
+INFO     HESS:test_essApi.py:95 测试用例::B端修改设备-逆变器status_code::200符合预期结果::200
+INFO     HESS:test_essApi.py:105 测试用例::B端修改设备-逆变器的msg_code::operate.success
+DEBUG    HESS:test_essApi.py:133 ess_data.xlsx::正常流程::测试用例::B端修改设备-逆变器不进行数据库比对
+INFO     HESS:test_essApi.py:134 ess_data.xlsx::正常流程::测试用例::B端修改设备-逆变器测试结果::Pass
+INFO     HESS:test_essApi.py:146 B端修改设备-逆变器响应报文::{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+INFO     HESS:test_essApi.py:148 B端修改设备-逆变器的测试结果::Pass已存档

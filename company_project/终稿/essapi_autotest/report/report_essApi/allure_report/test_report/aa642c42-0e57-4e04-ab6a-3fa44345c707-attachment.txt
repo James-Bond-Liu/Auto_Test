@@ -1,0 +1,15 @@
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端添加设备-充电桩的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMDM3b3E1bXZqc3ciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODExNzA5OTU0LCJleHAiOjE3MDAxMTgyODAsImlhdCI6MTY5NzUyNjI4MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.Gz2aBQjN2trMzLlft4EtQBOFL6IP6gvh31Ry9YEy87_iaHTus3w8SUgpSoYcSmcCoG0HFO_-8mtCCsKFWUb5Ew'}
+HESS 2023-10-17 15:04:42 INFO test_essApi.py **********测试用例【B端添加设备-充电桩】，开始请求接口**********
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端添加设备-充电桩的请求地址::http://192.168.108.160:8080/ctrller-manager/energystorage/insertNewList?groupId&deviceId&flag=1
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端添加设备-充电桩的请求方法::post
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端添加设备-充电桩的request_parameters::[{"inverterSn":"AutoTest_sn2","powerStation":41,"productType":73}]
+HESS 2023-10-17 15:04:42 INFO test_essApi.py **********测试用例【B端添加设备-充电桩】，接口请求完成**********
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端添加设备-充电桩的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMDM3b3E1bXZqc3ciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODExNzA5OTU0LCJleHAiOjE3MDAxMTgyODAsImlhdCI6MTY5NzUyNjI4MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.Gz2aBQjN2trMzLlft4EtQBOFL6IP6gvh31Ry9YEy87_iaHTus3w8SUgpSoYcSmcCoG0HFO_-8mtCCsKFWUb5Ew', 'Content-Length': '71'}
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端添加设备-充电桩的响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端添加设备-充电桩没有返回cookie
+HESS 2023-10-17 15:04:42 INFO test_essApi.py 测试用例::B端添加设备-充电桩status_code::200符合预期结果::200
+HESS 2023-10-17 15:04:42 INFO test_essApi.py 测试用例::B端添加设备-充电桩的msg_code::operate.success
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py ess_data.xlsx::正常流程::测试用例::B端添加设备-充电桩不进行数据库比对
+HESS 2023-10-17 15:04:42 INFO test_essApi.py ess_data.xlsx::正常流程::测试用例::B端添加设备-充电桩测试结果::Pass
+HESS 2023-10-17 15:04:42 INFO test_essApi.py B端添加设备-充电桩响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-17 15:04:42 INFO test_essApi.py B端添加设备-充电桩的测试结果::Pass已存档

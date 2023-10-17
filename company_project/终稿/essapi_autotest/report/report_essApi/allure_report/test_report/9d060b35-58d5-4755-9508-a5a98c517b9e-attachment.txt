@@ -1,0 +1,14 @@
+HESS 2023-10-17 15:04:49 DEBUG test_essApi.py 测试用例::inverterColumnShow的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODMwNTg0MzIxLCJleHAiOjE3MDAxMTgyODksImlhdCI6MTY5NzUyNjI4OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.5gtz_7jOX-CMuPK-U9WND9lnAKhA7TMKnJ09VrFbBJm9UXkHyja41gdieLzETcBUpVB_LHXGYruY80i6aDx1aQ'}
+HESS 2023-10-17 15:04:49 INFO test_essApi.py **********测试用例【inverterColumnShow】，开始请求接口**********
+HESS 2023-10-17 15:04:49 DEBUG test_essApi.py 测试用例::inverterColumnShow的请求地址::http://192.168.108.160:8080/ctrller-manager/operator/inverterColumnShow
+HESS 2023-10-17 15:04:49 DEBUG test_essApi.py 测试用例::inverterColumnShow的请求方法::get
+HESS 2023-10-17 15:04:49 INFO test_essApi.py **********测试用例【inverterColumnShow】，接口请求完成**********
+HESS 2023-10-17 15:04:49 DEBUG test_essApi.py 测试用例::inverterColumnShow的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODMwNTg0MzIxLCJleHAiOjE3MDAxMTgyODksImlhdCI6MTY5NzUyNjI4OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.5gtz_7jOX-CMuPK-U9WND9lnAKhA7TMKnJ09VrFbBJm9UXkHyja41gdieLzETcBUpVB_LHXGYruY80i6aDx1aQ'}
+HESS 2023-10-17 15:04:49 DEBUG test_essApi.py 测试用例::inverterColumnShow的响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-17 15:04:49 DEBUG test_essApi.py 测试用例::inverterColumnShow没有返回cookie
+HESS 2023-10-17 15:04:49 INFO test_essApi.py 测试用例::inverterColumnShowstatus_code::200符合预期结果::200
+HESS 2023-10-17 15:04:49 INFO test_essApi.py 测试用例::inverterColumnShow的msg_code::operate.success
+HESS 2023-10-17 15:04:49 DEBUG test_essApi.py ess_data.xlsx::设备管理-逆变器::测试用例::inverterColumnShow不进行数据库比对
+HESS 2023-10-17 15:04:49 INFO test_essApi.py ess_data.xlsx::设备管理-逆变器::测试用例::inverterColumnShow测试结果::Pass
+HESS 2023-10-17 15:04:50 INFO test_essApi.py inverterColumnShow响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-17 15:04:50 INFO test_essApi.py inverterColumnShow的测试结果::Pass已存档

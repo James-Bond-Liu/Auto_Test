@@ -1,0 +1,16 @@
+DEBUG    HESS:test_essApi.py:33 测试用例::强制修改密码的全局变量::customer_no==customer-2037ozuuxi4g
+DEBUG    HESS:test_essApi.py:42 测试用例::强制修改密码的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0yMDM3b3p1dXhpNGciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODA3NTE1NjUwLCJleHAiOjE3MDAxMTgyNzgsImlhdCI6MTY5NzUyNjI3OCwib3duZXJfdHlwZSI6ImN1c3RvbWVyIiwibG9jYWwiOiJlbiJ9.tI0SNZlQ_OLzC2PDTYjHyszro2EwHpTzM2VOIckJWo08C54fYWt9xt9RpPngQA1Qzuy9QAk5Z-iIt_UrvaQW_Q'}
+INFO     HESS:test_essApi.py:45 **********测试用例【强制修改密码】，开始请求接口**********
+DEBUG    HESS:test_essApi.py:46 测试用例::强制修改密码的请求地址::http://192.168.108.160:8080/nbp/customer/password/customer-2037ozuuxi4g
+DEBUG    HESS:test_essApi.py:47 测试用例::强制修改密码的请求方法::put
+DEBUG    HESS:test_essApi.py:53 测试用例::强制修改密码的request_parameters::{"old_password":"ab3a7e4cf5f8d34673809b7c1068e496","new_password":"b71ba87da2b0ba25599c8173f4946430"}
+INFO     HESS:test_essApi.py:75 **********测试用例【强制修改密码】，接口请求完成**********
+DEBUG    HESS:test_essApi.py:76 测试用例::强制修改密码的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0yMDM3b3p1dXhpNGciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODA3NTE1NjUwLCJleHAiOjE3MDAxMTgyNzgsImlhdCI6MTY5NzUyNjI3OCwib3duZXJfdHlwZSI6ImN1c3RvbWVyIiwibG9jYWwiOiJlbiJ9.tI0SNZlQ_OLzC2PDTYjHyszro2EwHpTzM2VOIckJWo08C54fYWt9xt9RpPngQA1Qzuy9QAk5Z-iIt_UrvaQW_Q', 'Content-Length': '104'}
+DEBUG    HESS:test_essApi.py:77 测试用例::强制修改密码的响应报文::{'msg_code': 'operate.success'}
+DEBUG    HESS:test_essApi.py:92 测试用例::强制修改密码没有返回cookie
+INFO     HESS:test_essApi.py:95 测试用例::强制修改密码status_code::200符合预期结果::200
+INFO     HESS:test_essApi.py:105 测试用例::强制修改密码的msg_code::operate.success
+DEBUG    HESS:test_essApi.py:133 ess_data.xlsx::正常流程::测试用例::强制修改密码不进行数据库比对
+INFO     HESS:test_essApi.py:134 ess_data.xlsx::正常流程::测试用例::强制修改密码测试结果::Pass
+INFO     HESS:test_essApi.py:146 强制修改密码响应报文::{'msg_code': 'operate.success'}已存档
+INFO     HESS:test_essApi.py:148 强制修改密码的测试结果::Pass已存档

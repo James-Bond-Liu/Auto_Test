@@ -1,0 +1,18 @@
+DEBUG    HESS:test_thirdApi.py:37 测试用例::login的全局变量::key==rx1tfOmyPHap+djiy6CM4jpb0HSCvv0R/bZtRPI7Q3ztienz0K/WbY5vJ7USvq7c\r\n
+DEBUG    HESS:test_thirdApi.py:48 测试用例::login的全局变量::key==rx1tfOmyPHap+djiy6CM4jpb0HSCvv0R/bZtRPI7Q3ztienz0K/WbY5vJ7USvq7c\r\n
+DEBUG    HESS:test_thirdApi.py:59 测试用例::login的请求头::{'Content-Type': 'application/json', 'authorization': None}
+INFO     HESS:test_thirdApi.py:61 **********测试用例【login】，开始请求接口**********
+DEBUG    HESS:test_thirdApi.py:62 测试用例::login的请求地址::http://192.168.108.160:8081/hess/api/login
+DEBUG    HESS:test_thirdApi.py:63 测试用例::login的请求方法::post
+DEBUG    HESS:test_thirdApi.py:69 测试用例::login的request_parameters::{"secuid": "6e7d2b81afba456294abe53084baebfb","key": "rx1tfOmyPHap+djiy6CM4jpb0HSCvv0R/bZtRPI7Q3ztienz0K/WbY5vJ7USvq7c\r\n"}
+INFO     HESS:test_thirdApi.py:91 **********测试用例【login】，接口请求完成**********
+DEBUG    HESS:test_thirdApi.py:92 测试用例::login的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '125'}
+INFO     HESS:test_thirdApi.py:93 测试用例::login的响应报文::{'code': '200', 'message': 'SUCCESS', 'data': {'msgCode': 'operate.success', 'message': None, 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoIiwiZXhwIjoxNjk3NTY4NjcyLCJ1c2VyIjoie1wiaWRcIjpcIjQ4OTRlNTU3OTFmODQ3YjJiYmQ5NTM4YTZiMjhjNzg5XCIsXCJrZXlcIjpcInJ4MXRmT215UEhhcCtkaml5NkNNNGpwYjBIU0N2djBSL2JadFJQSTdRM3p0aWVuejBLL1diWTV2SjdVU3ZxN2NcXHJcXG5cIixcIm5hbWVcIjpcIkF1dG9UZXN0X3VzZXJcIixcInNlY3VpZFwiOlwiNmU3ZDJiODFhZmJhNDU2Mjk0YWJlNTMwODRiYWViZmJcIixcInN0YXR1c1wiOjAsXCJ0eXBlXCI6XCIwXCJ9In0.1ruOpAe17cXBCAQaC1by07K08-G_A1jHkGfKnDH4s18', 'msg_code': 'operate.success'}}
+DEBUG    HESS:test_thirdApi.py:99 测试用例::login返回token::eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoIiwiZXhwIjoxNjk3NTY4NjcyLCJ1c2VyIjoie1wiaWRcIjpcIjQ4OTRlNTU3OTFmODQ3YjJiYmQ5NTM4YTZiMjhjNzg5XCIsXCJrZXlcIjpcInJ4MXRmT215UEhhcCtkaml5NkNNNGpwYjBIU0N2djBSL2JadFJQSTdRM3p0aWVuejBLL1diWTV2SjdVU3ZxN2NcXHJcXG5cIixcIm5hbWVcIjpcIkF1dG9UZXN0X3VzZXJcIixcInNlY3VpZFwiOlwiNmU3ZDJiODFhZmJhNDU2Mjk0YWJlNTMwODRiYWViZmJcIixcInN0YXR1c1wiOjAsXCJ0eXBlXCI6XCIwXCJ9In0.1ruOpAe17cXBCAQaC1by07K08-G_A1jHkGfKnDH4s18
+DEBUG    HESS:test_thirdApi.py:106 测试用例::login没有返回cookie
+INFO     HESS:test_thirdApi.py:110 测试用例::loginstatus_code::200符合预期结果::200
+INFO     HESS:test_thirdApi.py:119 测试用例::login的msg_code::operate.success,符合预期结果::operate.success
+DEBUG    HESS:test_thirdApi.py:160 api_data.xlsx::第三方API::测试用例::login不进行数据库比对
+INFO     HESS:test_thirdApi.py:161 api_data.xlsx::第三方API::测试用例::login测试结果::Pass
+DEBUG    HESS:test_thirdApi.py:175 login响应报文::{'code': '200', 'message': 'SUCCESS', 'data': {'msgCode': 'operate.success', 'message': None, 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoIiwiZXhwIjoxNjk3NTY4NjcyLCJ1c2VyIjoie1wiaWRcIjpcIjQ4OTRlNTU3OTFmODQ3YjJiYmQ5NTM4YTZiMjhjNzg5XCIsXCJrZXlcIjpcInJ4MXRmT215UEhhcCtkaml5NkNNNGpwYjBIU0N2djBSL2JadFJQSTdRM3p0aWVuejBLL1diWTV2SjdVU3ZxN2NcXHJcXG5cIixcIm5hbWVcIjpcIkF1dG9UZXN0X3VzZXJcIixcInNlY3VpZFwiOlwiNmU3ZDJiODFhZmJhNDU2Mjk0YWJlNTMwODRiYWViZmJcIixcInN0YXR1c1wiOjAsXCJ0eXBlXCI6XCIwXCJ9In0.1ruOpAe17cXBCAQaC1by07K08-G_A1jHkGfKnDH4s18', 'msg_code': 'operate.success'}}已存档
+DEBUG    HESS:test_thirdApi.py:177 login的测试结果::Pass已存档

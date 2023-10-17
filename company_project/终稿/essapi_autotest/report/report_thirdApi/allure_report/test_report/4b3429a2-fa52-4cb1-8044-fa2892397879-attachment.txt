@@ -1,0 +1,18 @@
+HESS 2023-10-17 14:51:11 DEBUG test_thirdApi.py 测试用例::register的请求头::{'Content-Type': 'application/json', 'authorization': None}
+HESS 2023-10-17 14:51:11 INFO test_thirdApi.py **********测试用例【register】，开始请求接口**********
+HESS 2023-10-17 14:51:11 DEBUG test_thirdApi.py 测试用例::register的请求地址::http://192.168.108.160:8081/hess/api/register
+HESS 2023-10-17 14:51:11 DEBUG test_thirdApi.py 测试用例::register的请求方法::post
+HESS 2023-10-17 14:51:11 DEBUG test_thirdApi.py 测试用例::register的request_parameters::{"userName":"AutoTest_user","address":"南京","type":"0"}
+HESS 2023-10-17 14:51:11 INFO test_thirdApi.py **********测试用例【register】，接口请求完成**********
+HESS 2023-10-17 14:51:11 DEBUG test_thirdApi.py 测试用例::register的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '69'}
+HESS 2023-10-17 14:51:11 INFO test_thirdApi.py 测试用例::register的响应报文::{'code': '200', 'message': 'SUCCESS', 'data': {'msgCode': 'operate.success', 'message': None, 'data': {'name': 'AutoTest_user', 'secuid': '6e7d2b81afba456294abe53084baebfb', 'key': 'rx1tfOmyPHap+djiy6CM4jpb0HSCvv0R/bZtRPI7Q3ztienz0K/WbY5vJ7USvq7c\r\n', 'type': '0'}, 'msg_code': 'operate.success'}}
+HESS 2023-10-17 14:51:11 DEBUG test_thirdApi.py 测试用例::register没有返回cookie
+HESS 2023-10-17 14:51:11 INFO test_thirdApi.py 测试用例::registerstatus_code::200符合预期结果::200
+HESS 2023-10-17 14:51:11 INFO test_thirdApi.py 测试用例::register的msg_code::operate.success,符合预期结果::operate.success
+HESS 2023-10-17 14:51:12 DEBUG test_thirdApi.py 测试用例::register的全局变量::secuid==6e7d2b81afba456294abe53084baebfb
+HESS 2023-10-17 14:51:12 DEBUG test_thirdApi.py 测试用例::register进行数据库校验，校验sql::('hess_api','demo','select count(*) from hess_api.user where name="AutoTest_user" and status=0;')
+HESS 2023-10-17 14:51:12 DEBUG test_thirdApi.py 测试用例::register查询数据库结果::1，期望结果::1
+HESS 2023-10-17 14:51:12 INFO test_thirdApi.py api_data.xlsx::第三方API::测试用例::register数据库比对::成功
+HESS 2023-10-17 14:51:12 INFO test_thirdApi.py api_data.xlsx::第三方API::测试用例::register测试结果::Pass
+HESS 2023-10-17 14:51:12 DEBUG test_thirdApi.py register响应报文::{'code': '200', 'message': 'SUCCESS', 'data': {'msgCode': 'operate.success', 'message': None, 'data': {'name': 'AutoTest_user', 'secuid': '6e7d2b81afba456294abe53084baebfb', 'key': 'rx1tfOmyPHap+djiy6CM4jpb0HSCvv0R/bZtRPI7Q3ztienz0K/WbY5vJ7USvq7c\r\n', 'type': '0'}, 'msg_code': 'operate.success'}}已存档
+HESS 2023-10-17 14:51:12 DEBUG test_thirdApi.py register的测试结果::Pass已存档

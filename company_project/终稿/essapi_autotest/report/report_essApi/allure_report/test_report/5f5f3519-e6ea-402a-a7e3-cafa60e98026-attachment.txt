@@ -1,0 +1,16 @@
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端修改设备-逆变器的全局变量::energystorage_id==47
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端修改设备-逆变器的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMDM3b3E1bXZqc3ciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODExNzA5OTU0LCJleHAiOjE3MDAxMTgyODAsImlhdCI6MTY5NzUyNjI4MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.Gz2aBQjN2trMzLlft4EtQBOFL6IP6gvh31Ry9YEy87_iaHTus3w8SUgpSoYcSmcCoG0HFO_-8mtCCsKFWUb5Ew'}
+HESS 2023-10-17 15:04:42 INFO test_essApi.py **********测试用例【B端修改设备-逆变器】，开始请求接口**********
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端修改设备-逆变器的请求地址::http://192.168.108.160:8080/ctrller-manager/energystorage/update
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端修改设备-逆变器的请求方法::post
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端修改设备-逆变器的request_parameters::{"id":47,"name":"AutoTestDemo1(HP3-3KD1)","pvstring":[]}
+HESS 2023-10-17 15:04:42 INFO test_essApi.py **********测试用例【B端修改设备-逆变器】，接口请求完成**********
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端修改设备-逆变器的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMDM3b3E1bXZqc3ciLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODExNzA5OTU0LCJleHAiOjE3MDAxMTgyODAsImlhdCI6MTY5NzUyNjI4MCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.Gz2aBQjN2trMzLlft4EtQBOFL6IP6gvh31Ry9YEy87_iaHTus3w8SUgpSoYcSmcCoG0HFO_-8mtCCsKFWUb5Ew', 'Content-Length': '61'}
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端修改设备-逆变器的响应报文::{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py 测试用例::B端修改设备-逆变器没有返回cookie
+HESS 2023-10-17 15:04:42 INFO test_essApi.py 测试用例::B端修改设备-逆变器status_code::200符合预期结果::200
+HESS 2023-10-17 15:04:42 INFO test_essApi.py 测试用例::B端修改设备-逆变器的msg_code::operate.success
+HESS 2023-10-17 15:04:42 DEBUG test_essApi.py ess_data.xlsx::正常流程::测试用例::B端修改设备-逆变器不进行数据库比对
+HESS 2023-10-17 15:04:42 INFO test_essApi.py ess_data.xlsx::正常流程::测试用例::B端修改设备-逆变器测试结果::Pass
+HESS 2023-10-17 15:04:42 INFO test_essApi.py B端修改设备-逆变器响应报文::{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-17 15:04:42 INFO test_essApi.py B端修改设备-逆变器的测试结果::Pass已存档

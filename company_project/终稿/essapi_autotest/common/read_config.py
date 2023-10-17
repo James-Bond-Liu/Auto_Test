@@ -13,6 +13,6 @@ class ReadConfig():
 
 
 if __name__ == '__main__':
-    a = ReadConfig().readconfig('MODE', 'data')
+    a = ReadConfig().readconfig('MODE', 'data_essApi')
     print(a)
     print(type(eval(a)))

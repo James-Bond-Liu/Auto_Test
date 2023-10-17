@@ -1,0 +1,15 @@
+DEBUG    HESS:test_essApi.py:42 测试用例::修改B端用户的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODA1NDE4NDk3LCJleHAiOjE3MDAxMTgyNzcsImlhdCI6MTY5NzUyNjI3Nywib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.I5Kt0KuNbtoRR4dlUVKemOa9mOQpE0wUO8UimQ-ZD4E_YJ8kltY6x5Zlsmvc4b66KQ__k9wRlTCXdg10O3wI8g'}
+INFO     HESS:test_essApi.py:45 **********测试用例【修改B端用户】，开始请求接口**********
+DEBUG    HESS:test_essApi.py:46 测试用例::修改B端用户的请求地址::http://192.168.108.160:8080/ctrller-manager/operator/operatorUpdate
+DEBUG    HESS:test_essApi.py:47 测试用例::修改B端用户的请求方法::post
+DEBUG    HESS:test_essApi.py:53 测试用例::修改B端用户的request_parameters::{"no":"operator-2037oq5mvjsw","account":"AutoTest_admin","agentName":"AutoTest_admin","email":"AutoTest_admin@qq.com","orgId":263569771864064,"roleId":9,"telephone":"","description":"自动化测试专用","type":"1","country_id":"45"}
+INFO     HESS:test_essApi.py:75 **********测试用例【修改B端用户】，接口请求完成**********
+DEBUG    HESS:test_essApi.py:76 测试用例::修改B端用户的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjYzNTY5ODA1NDE4NDk3LCJleHAiOjE3MDAxMTgyNzcsImlhdCI6MTY5NzUyNjI3Nywib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.I5Kt0KuNbtoRR4dlUVKemOa9mOQpE0wUO8UimQ-ZD4E_YJ8kltY6x5Zlsmvc4b66KQ__k9wRlTCXdg10O3wI8g', 'Content-Length': '275'}
+DEBUG    HESS:test_essApi.py:77 测试用例::修改B端用户的响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+DEBUG    HESS:test_essApi.py:92 测试用例::修改B端用户没有返回cookie
+INFO     HESS:test_essApi.py:95 测试用例::修改B端用户status_code::200符合预期结果::200
+INFO     HESS:test_essApi.py:105 测试用例::修改B端用户的msg_code::operate.success
+DEBUG    HESS:test_essApi.py:133 ess_data.xlsx::正常流程::测试用例::修改B端用户不进行数据库比对
+INFO     HESS:test_essApi.py:134 ess_data.xlsx::正常流程::测试用例::修改B端用户测试结果::Pass
+INFO     HESS:test_essApi.py:146 修改B端用户响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+INFO     HESS:test_essApi.py:148 修改B端用户的测试结果::Pass已存档
