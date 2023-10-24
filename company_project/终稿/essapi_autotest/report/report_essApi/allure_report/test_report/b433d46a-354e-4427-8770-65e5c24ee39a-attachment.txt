@@ -1,0 +1,16 @@
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::getToBSample的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTM2NDg1Mzc3LCJleHAiOjE3MDA2MzgwOTIsImlhdCI6MTY5ODA0NjA5Miwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.zIPBPgc3xuVX5LnEqoa8qEFpacz9UQ1xtAnck-uiLWK9ajhKLBz50Y5ef7Kt_13ls6Z3icFQmRfeHuxP0yz-ng'}
+HESS 2023-10-23 15:28:14 INFO test_essApi.py **********测试用例【getToBSample】，开始请求接口**********
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::getToBSample的请求地址::http://192.168.108.160:8080/ctrller-manager/sample/getToBSample
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::getToBSample的请求方法::post
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::getToBSample的request_parameters::{"timeType":1,"id":0,"objectType":2,"startTime":"2023-08-01 00:00:00","endTime":"2023-08-31 00:00:00"}
+HESS 2023-10-23 15:28:14 INFO test_essApi.py **********测试用例【getToBSample】，接口请求完成**********
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::getToBSample的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTM2NDg1Mzc3LCJleHAiOjE3MDA2MzgwOTIsImlhdCI6MTY5ODA0NjA5Miwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.zIPBPgc3xuVX5LnEqoa8qEFpacz9UQ1xtAnck-uiLWK9ajhKLBz50Y5ef7Kt_13ls6Z3icFQmRfeHuxP0yz-ng', 'Content-Length': '111'}
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::getToBSample的响应报文::{'data': [[]], 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::getToBSample没有返回token
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::getToBSample没有返回cookie
+HESS 2023-10-23 15:28:14 INFO test_essApi.py 测试用例::getToBSamplestatus_code::200符合预期结果::200
+HESS 2023-10-23 15:28:14 INFO test_essApi.py 测试用例::getToBSample的msg_code::operate.success
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py ess_data.xlsx::首页::测试用例::getToBSample不进行数据库比对
+HESS 2023-10-23 15:28:14 INFO test_essApi.py ess_data.xlsx::首页::测试用例::getToBSample测试结果::Pass
+HESS 2023-10-23 15:28:14 INFO test_essApi.py getToBSample响应报文::{'data': [[]], 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-23 15:28:14 INFO test_essApi.py getToBSample的测试结果::Pass已存档

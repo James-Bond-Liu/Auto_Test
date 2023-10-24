@@ -1,0 +1,16 @@
+DEBUG    HESS:test_essApi.py:48 测试用例::path的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTM2NDg1Mzc3LCJleHAiOjE3MDA2MzgwOTIsImlhdCI6MTY5ODA0NjA5Miwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.zIPBPgc3xuVX5LnEqoa8qEFpacz9UQ1xtAnck-uiLWK9ajhKLBz50Y5ef7Kt_13ls6Z3icFQmRfeHuxP0yz-ng'}
+INFO     HESS:test_essApi.py:51 **********测试用例【path】，开始请求接口**********
+DEBUG    HESS:test_essApi.py:52 测试用例::path的请求地址::http://192.168.108.160:10006/postSale/support/path
+DEBUG    HESS:test_essApi.py:53 测试用例::path的请求方法::post
+DEBUG    HESS:test_essApi.py:59 测试用例::path的request_parameters::["serviceAndSupport","notice","hot","userManual","case"]
+INFO     HESS:test_essApi.py:81 **********测试用例【path】，接口请求完成**********
+DEBUG    HESS:test_essApi.py:82 测试用例::path的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTM2NDg1Mzc3LCJleHAiOjE3MDA2MzgwOTIsImlhdCI6MTY5ODA0NjA5Miwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.zIPBPgc3xuVX5LnEqoa8qEFpacz9UQ1xtAnck-uiLWK9ajhKLBz50Y5ef7Kt_13ls6Z3icFQmRfeHuxP0yz-ng', 'Content-Length': '60'}
+DEBUG    HESS:test_essApi.py:83 测试用例::path的响应报文::{'msgCode': 'operate.success', 'message': None, 'data': [{'id': '1', 'path': 'https://livoltek.com/service/faq-support/', 'updateTime': None, 'name': 'serviceAndSupport'}, {'id': '2', 'path': 'https://livoltek.com/about/events/', 'updateTime': None, 'name': 'notice'}, {'id': '3', 'path': 'https://livoltek.com/products/', 'updateTime': None, 'name': 'hot'}, {'id': '5', 'path': 'https://livoltek.com/news_detail/id-41.html', 'updateTime': None, 'name': 'case'}, {'id': '6', 'path': 'https://livoltek.com/service/downloads/', 'updateTime': None, 'name': 'userManual'}], 'total': 0, 'msg_code': 'operate.success'}
+DEBUG    HESS:test_essApi.py:91 测试用例::path没有返回token
+DEBUG    HESS:test_essApi.py:98 测试用例::path没有返回cookie
+INFO     HESS:test_essApi.py:101 测试用例::pathstatus_code::200符合预期结果::200
+INFO     HESS:test_essApi.py:111 测试用例::path的msg_code::operate.success
+DEBUG    HESS:test_essApi.py:169 ess_data.xlsx::首页::测试用例::path不进行数据库比对
+INFO     HESS:test_essApi.py:170 ess_data.xlsx::首页::测试用例::path测试结果::Pass
+INFO     HESS:test_essApi.py:182 path响应报文::{'msgCode': 'operate.success', 'message': None, 'data': [{'id': '1', 'path': 'https://livoltek.com/service/faq-support/', 'updateTime': None, 'name': 'serviceAndSupport'}, {'id': '2', 'path': 'https://livoltek.com/about/events/', 'updateTime': None, 'name': 'notice'}, {'id': '3', 'path': 'https://livoltek.com/products/', 'updateTime': None, 'name': 'hot'}, {'id': '5', 'path': 'https://livoltek.com/news_detail/id-41.html', 'updateTime': None, 'name': 'case'}, {'id': '6', 'path': 'https://livoltek.com/service/downloads/', 'updateTime': None, 'name': 'userManual'}], 'total': 0, 'msg_code': 'operate.success'}已存档
+INFO     HESS:test_essApi.py:184 path的测试结果::Pass已存档

@@ -1,0 +1,16 @@
+DEBUG    HESS:test_essApi.py:48 测试用例::dropDown的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTUxMTY1NDQxLCJleHAiOjE3MDA2MzgwOTksImlhdCI6MTY5ODA0NjA5OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.5DuSDF7WA4S4lmpThAPI-4GSRYo_qhSf0sqfji-PqkXA9nmnjSVuJoJSvUiI6gQQ80BBfb66I69HG-z8O6vnXg'}
+INFO     HESS:test_essApi.py:51 **********测试用例【dropDown】，开始请求接口**********
+DEBUG    HESS:test_essApi.py:52 测试用例::dropDown的请求地址::http://192.168.108.160:8080/ctrller-manager/energystorage/dropDown
+DEBUG    HESS:test_essApi.py:53 测试用例::dropDown的请求方法::post
+DEBUG    HESS:test_essApi.py:59 测试用例::dropDown的request_parameters::{"pageSize":10,"start":1,"filterSn":None,"systemType":None,"productTypeList":[],"filterStationId":[],"filterVersion":None,"filterStatus":None,"filterCountry":None,"filterTime":[],"filterWorkStatus":None,"order":0}
+INFO     HESS:test_essApi.py:81 **********测试用例【dropDown】，接口请求完成**********
+DEBUG    HESS:test_essApi.py:82 测试用例::dropDown的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTUxMTY1NDQxLCJleHAiOjE3MDA2MzgwOTksImlhdCI6MTY5ODA0NjA5OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.5DuSDF7WA4S4lmpThAPI-4GSRYo_qhSf0sqfji-PqkXA9nmnjSVuJoJSvUiI6gQQ80BBfb66I69HG-z8O6vnXg', 'Content-Length': '236'}
+DEBUG    HESS:test_essApi.py:83 测试用例::dropDown的响应报文::{'data': [{'collectorSn': None, 'id': 26, 'inverterSn': 'ThirdApi_sn2', 'name': 'ThirdApi_sn2(Hyper-2000)', 'powerStationId': 21, 'powerStationName': 'ThirdApi_site'}, {'collectorSn': None, 'id': 66, 'inverterSn': 'AutoTest_sn1', 'name': 'AutoTestDemo1(HP3-3KD1)', 'powerStationId': 55, 'powerStationName': 'AutoTest_site'}, {'collectorSn': None, 'id': 67, 'inverterSn': 'AutoTest_sn2', 'name': 'AutoTest_sn2(A0070230E11)', 'powerStationId': 55, 'powerStationName': 'AutoTest_site'}], 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success', 'total': 3}
+DEBUG    HESS:test_essApi.py:91 测试用例::dropDown没有返回token
+DEBUG    HESS:test_essApi.py:98 测试用例::dropDown没有返回cookie
+INFO     HESS:test_essApi.py:101 测试用例::dropDownstatus_code::200符合预期结果::200
+INFO     HESS:test_essApi.py:111 测试用例::dropDown的msg_code::operate.success
+DEBUG    HESS:test_essApi.py:169 ess_data.xlsx::设备管理-逆变器::测试用例::dropDown不进行数据库比对
+INFO     HESS:test_essApi.py:170 ess_data.xlsx::设备管理-逆变器::测试用例::dropDown测试结果::Pass
+INFO     HESS:test_essApi.py:182 dropDown响应报文::{'data': [{'collectorSn': None, 'id': 26, 'inverterSn': 'ThirdApi_sn2', 'name': 'ThirdApi_sn2(Hyper-2000)', 'powerStationId': 21, 'powerStationName': 'ThirdApi_site'}, {'collectorSn': None, 'id': 66, 'inverterSn': 'AutoTest_sn1', 'name': 'AutoTestDemo1(HP3-3KD1)', 'powerStationId': 55, 'powerStationName': 'AutoTest_site'}, {'collectorSn': None, 'id': 67, 'inverterSn': 'AutoTest_sn2', 'name': 'AutoTest_sn2(A0070230E11)', 'powerStationId': 55, 'powerStationName': 'AutoTest_site'}], 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success', 'total': 3}已存档
+INFO     HESS:test_essApi.py:184 dropDown的测试结果::Pass已存档

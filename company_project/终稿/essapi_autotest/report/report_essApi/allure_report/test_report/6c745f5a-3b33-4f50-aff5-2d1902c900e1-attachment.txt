@@ -1,0 +1,16 @@
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTU3NDU2ODk3LCJleHAiOjE3MDA2MzgxMDIsImlhdCI6MTY5ODA0NjEwMiwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.PoUjKiiRe2XzxnX0ZdeLPPbYXT-U4RGB_282kDk4xK5zwj_oR9oMfN36ZAjU9iq3DKNe18pev3lcjsE3e_gYkg'}
+HESS 2023-10-23 15:28:23 INFO test_essApi.py **********测试用例【删除SN号】，开始请求接口**********
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号的请求地址::http://192.168.108.160:8080/ctrller-manager/productType/deleteSN
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号的请求方法::post
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号的request_parameters::{"snList":["AutoTest_sn1","AutoTest_sn2"]}
+HESS 2023-10-23 15:28:23 INFO test_essApi.py **********测试用例【删除SN号】，接口请求完成**********
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTU3NDU2ODk3LCJleHAiOjE3MDA2MzgxMDIsImlhdCI6MTY5ODA0NjEwMiwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.PoUjKiiRe2XzxnX0ZdeLPPbYXT-U4RGB_282kDk4xK5zwj_oR9oMfN36ZAjU9iq3DKNe18pev3lcjsE3e_gYkg', 'Content-Length': '44'}
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号的响应报文::{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号没有返回cookie
+HESS 2023-10-23 15:28:23 INFO test_essApi.py 测试用例::删除SN号status_code::200符合预期结果::200
+HESS 2023-10-23 15:28:23 INFO test_essApi.py 测试用例::删除SN号的msg_code::operate.success
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号需要进行数据库校验，校验sql::('hess','demo','select count(*) from hess.scada_sn_type where inverter_sn="AutoTest_sn1" or inverter_sn="AutoTest_sn2";')
+HESS 2023-10-23 15:28:23 DEBUG test_essApi.py 测试用例::删除SN号查询数据库结果::0，期望结果::0
+HESS 2023-10-23 15:28:23 INFO test_essApi.py ess_data.xlsx::清理数据::测试用例::删除SN号测试结果::Pass
+HESS 2023-10-23 15:28:23 INFO test_essApi.py 删除SN号响应报文::{'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-23 15:28:24 INFO test_essApi.py 删除SN号的测试结果::Pass已存档

@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+import os
+import sys
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 from common.http_request import HttpRequest
 from common.get_thirdApi_data import GetRequestData, UpdateData
 import pytest
@@ -143,18 +149,48 @@ class TestApi():
                 database_actual_result = DoMysql(eval(con)).select(item['database_compare_sql'][2])[0]
                 logger.debug('测试用例::{}查询数据库结果::{}，期望结果::{}'.format(item['case_name'], database_actual_result,
                                                                   item['database_expect_result']))
-                if database_actual_result == item['database_expect_result']:
-                    compare_result = 'Pass'
-                    logger.info(
-                        f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}数据库比对::成功')
-                    logger.info(
-                        f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
-                else:
-                    compare_result = 'Failed'
-                    logger.error(
-                        f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}数据库比对::失败')
-                    logger.error(
-                        f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+
+                if isinstance(database_actual_result, int):
+                    if database_actual_result == item['database_expect_result']:
+                        compare_result = 'Pass'
+                        logger.info(
+                            f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+                    else:
+                        compare_result = 'Failed'
+                        logger.error(
+                            f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+                elif isinstance(database_actual_result, str) and database_actual_result.isdigit():
+                    if database_actual_result == str(item['database_expect_result']):
+                        compare_result = 'Pass'
+                        logger.info(
+                            f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+                    else:
+                        compare_result = 'Failed'
+                        logger.error(
+                            f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+                elif isinstance(database_actual_result, str):
+                    if database_actual_result == item['database_expect_result']:
+                        compare_result = 'Pass'
+                        logger.info(
+                            f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+                    else:
+                        compare_result = 'Failed'
+                        logger.error(
+                            f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+
+                # if database_actual_result == str(item['database_expect_result']):
+                #     compare_result = 'Pass'
+                #     logger.info(
+                #         f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}数据库比对::成功')
+                #     logger.info(
+                #         f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+                # else:
+                #     compare_result = 'Failed'
+                #     logger.error(
+                #         f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}数据库比对::失败')
+                #     logger.error(
+                #         f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}测试结果::{compare_result}')
+
             else:
                 compare_result = 'Pass'
                 logger.debug(f'{item["file_name"]}::{item["sheet_name"]}::测试用例::{item["case_name"]}不进行数据库比对')

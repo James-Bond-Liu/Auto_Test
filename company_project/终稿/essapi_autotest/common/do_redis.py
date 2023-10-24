@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
+import os
+import sys
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 
 import redis
+
 
 # redis = redis.Redis(host='172.30.12.227', port=6379,db=9, password=123456)
 

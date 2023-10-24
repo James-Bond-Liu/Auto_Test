@@ -1,0 +1,18 @@
+HESS 2023-10-23 15:27:48 DEBUG test_essApi.py 测试用例::注册B端用户的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5ODg2MTUzNzI5LCJleHAiOjE3MDA2MzgwNjgsImlhdCI6MTY5ODA0NjA2OCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.vwQCSv11I2NPvDh_xPOCaZiOXGu8d41hJBPO_XmWhz0MDyH28rEDUckqQJ1cwdWQ7u_kFjpi37qQ9Hjia9Rb5w'}
+HESS 2023-10-23 15:27:48 INFO test_essApi.py **********测试用例【注册B端用户】，开始请求接口**********
+HESS 2023-10-23 15:27:48 DEBUG test_essApi.py 测试用例::注册B端用户的请求地址::http://192.168.108.160:8080/ctrller-manager/operator/operatorRegister?envirId=5
+HESS 2023-10-23 15:27:48 DEBUG test_essApi.py 测试用例::注册B端用户的请求方法::post
+HESS 2023-10-23 15:27:48 DEBUG test_essApi.py 测试用例::注册B端用户的request_parameters::{"account":"AutoTest_admin","agentName":"","email":"AutoTest_admin@qq.com","mobile":"","orgId":264659886153731,"password":"618d6eb73fef252768bf9c2a5f8447d4","roleId":9,"telephone":"","description":"","type":"1","country_id":"26","register_source":"3","registerType":2}
+HESS 2023-10-23 15:27:57 INFO test_essApi.py **********测试用例【注册B端用户】，接口请求完成**********
+HESS 2023-10-23 15:27:57 DEBUG test_essApi.py 测试用例::注册B端用户的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5ODg2MTUzNzI5LCJleHAiOjE3MDA2MzgwNjgsImlhdCI6MTY5ODA0NjA2OCwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.vwQCSv11I2NPvDh_xPOCaZiOXGu8d41hJBPO_XmWhz0MDyH28rEDUckqQJ1cwdWQ7u_kFjpi37qQ9Hjia9Rb5w', 'Content-Length': '293'}
+HESS 2023-10-23 15:27:57 DEBUG test_essApi.py 测试用例::注册B端用户的响应报文::{'data': {'account': 'AutoTest_admin', 'agentName': '', 'country_id': 26, 'description': '', 'email': 'AutoTest_admin@qq.com', 'mobile': '', 'no': 'operator-20dy3m62nqio', 'orgId': 264659886153731, 'password': '618d6eb73fef252768bf9c2a5f8447d4', 'registerType': 2, 'register_source': 3, 'roleId': 9, 'telephone': '', 'type': 1}, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-23 15:27:57 DEBUG test_essApi.py 测试用例::注册B端用户没有返回token
+HESS 2023-10-23 15:27:57 DEBUG test_essApi.py 测试用例::注册B端用户没有返回cookie
+HESS 2023-10-23 15:27:57 INFO test_essApi.py 测试用例::注册B端用户status_code::200符合预期结果::200
+HESS 2023-10-23 15:27:57 INFO test_essApi.py 测试用例::注册B端用户的msg_code::operate.success
+HESS 2023-10-23 15:27:57 DEBUG test_essApi.py 测试用例::注册B端用户的全局变量::operator_no==operator-20dy3m62nqio
+HESS 2023-10-23 15:27:57 DEBUG test_essApi.py 测试用例::注册B端用户需要进行数据库校验，校验sql::('uap_2c','demo','select count(*) from uap_2c.nbp_operator where name="AutoTest_admin" and state="normal";')
+HESS 2023-10-23 15:27:57 DEBUG test_essApi.py 测试用例::注册B端用户查询数据库结果::1，期望结果::1
+HESS 2023-10-23 15:27:57 INFO test_essApi.py ess_data.xlsx::准备数据::测试用例::注册B端用户测试结果::Pass
+HESS 2023-10-23 15:27:57 INFO test_essApi.py 注册B端用户响应报文::{'data': {'account': 'AutoTest_admin', 'agentName': '', 'country_id': 26, 'description': '', 'email': 'AutoTest_admin@qq.com', 'mobile': '', 'no': 'operator-20dy3m62nqio', 'orgId': 264659886153731, 'password': '618d6eb73fef252768bf9c2a5f8447d4', 'registerType': 2, 'register_source': 3, 'roleId': 9, 'telephone': '', 'type': 1}, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-23 15:27:58 INFO test_essApi.py 注册B端用户的测试结果::Pass已存档

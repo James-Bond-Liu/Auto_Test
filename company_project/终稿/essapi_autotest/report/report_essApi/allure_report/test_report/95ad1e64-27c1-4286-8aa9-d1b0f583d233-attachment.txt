@@ -1,0 +1,15 @@
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::stationState的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTM2NDg1Mzc3LCJleHAiOjE3MDA2MzgwOTIsImlhdCI6MTY5ODA0NjA5Miwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.zIPBPgc3xuVX5LnEqoa8qEFpacz9UQ1xtAnck-uiLWK9ajhKLBz50Y5ef7Kt_13ls6Z3icFQmRfeHuxP0yz-ng'}
+HESS 2023-10-23 15:28:14 INFO test_essApi.py **********测试用例【stationState】，开始请求接口**********
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::stationState的请求地址::http://192.168.108.160:8080/ctrller-manager/powerstation/stationState?isUseChangeUnit=true
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::stationState的请求方法::post
+HESS 2023-10-23 15:28:14 INFO test_essApi.py **********测试用例【stationState】，接口请求完成**********
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::stationState的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTM2NDg1Mzc3LCJleHAiOjE3MDA2MzgwOTIsImlhdCI6MTY5ODA0NjA5Miwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.zIPBPgc3xuVX5LnEqoa8qEFpacz9UQ1xtAnck-uiLWK9ajhKLBz50Y5ef7Kt_13ls6Z3icFQmRfeHuxP0yz-ng', 'Content-Length': '0'}
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::stationState的响应报文::{'data': {'alarmStation': None, 'allOfflineStation': 2, 'currentPower': '0', 'currentPowerUnit': 'kW', 'installedCapacity': '1.666', 'installedCapacityUnit': 'MWp', 'normalStation': 0, 'someOfflineStation': 0, 'thisMonthGenerate': '0', 'thisMonthGenerateUnit': 'kWh', 'thisYearGenerate': '0', 'thisYearGenerateUnit': 'kWh', 'todayGenerate': '0', 'todayGenerateUnit': 'kWh', 'totalGenerate': '0', 'totalGenerateUnit': 'kWh'}, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::stationState没有返回token
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py 测试用例::stationState没有返回cookie
+HESS 2023-10-23 15:28:14 INFO test_essApi.py 测试用例::stationStatestatus_code::200符合预期结果::200
+HESS 2023-10-23 15:28:14 INFO test_essApi.py 测试用例::stationState的msg_code::operate.success
+HESS 2023-10-23 15:28:14 DEBUG test_essApi.py ess_data.xlsx::首页::测试用例::stationState不进行数据库比对
+HESS 2023-10-23 15:28:14 INFO test_essApi.py ess_data.xlsx::首页::测试用例::stationState测试结果::Pass
+HESS 2023-10-23 15:28:14 INFO test_essApi.py stationState响应报文::{'data': {'alarmStation': None, 'allOfflineStation': 2, 'currentPower': '0', 'currentPowerUnit': 'kW', 'installedCapacity': '1.666', 'installedCapacityUnit': 'MWp', 'normalStation': 0, 'someOfflineStation': 0, 'thisMonthGenerate': '0', 'thisMonthGenerateUnit': 'kWh', 'thisYearGenerate': '0', 'thisYearGenerateUnit': 'kWh', 'todayGenerate': '0', 'todayGenerateUnit': 'kWh', 'totalGenerate': '0', 'totalGenerateUnit': 'kWh'}, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-23 15:28:14 INFO test_essApi.py stationState的测试结果::Pass已存档

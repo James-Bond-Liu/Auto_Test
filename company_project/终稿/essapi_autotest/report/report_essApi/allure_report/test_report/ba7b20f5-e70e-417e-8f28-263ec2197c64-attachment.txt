@@ -1,0 +1,16 @@
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTIzOTAyNDY1LCJleHAiOjE3MDA2MzgwODYsImlhdCI6MTY5ODA0NjA4Niwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.gtvHaEMyGxYC1wZUGBXpEZRvEGPUQ6jEfnbbgzpyAqp5n7WLJdJ0R3lQUVuCfoMK4cUPUiQm5S2NomH0Bnx-9A'}
+HESS 2023-10-23 15:28:07 INFO test_essApi.py **********测试用例【修改B端用户】，开始请求接口**********
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户的请求地址::http://192.168.108.160:8080/ctrller-manager/operator/operatorUpdate
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户的请求方法::post
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户的request_parameters::{"no":"operator-20dy3m62nqio","account":"AutoTest_admin","agentName":"AutoTest_admin","email":"AutoTest_admin@qq.com","orgId":264659886153731,"roleId":9,"telephone":"","description":"自动化测试专用","type":"1","country_id":"45"}
+HESS 2023-10-23 15:28:07 INFO test_essApi.py **********测试用例【修改B端用户】，接口请求完成**********
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lci0wMDAwMDAwMDAwMDAwMDAiLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTIzOTAyNDY1LCJleHAiOjE3MDA2MzgwODYsImlhdCI6MTY5ODA0NjA4Niwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.gtvHaEMyGxYC1wZUGBXpEZRvEGPUQ6jEfnbbgzpyAqp5n7WLJdJ0R3lQUVuCfoMK4cUPUiQm5S2NomH0Bnx-9A', 'Content-Length': '275'}
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户的响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户没有返回cookie
+HESS 2023-10-23 15:28:07 INFO test_essApi.py 测试用例::修改B端用户status_code::200符合预期结果::200
+HESS 2023-10-23 15:28:07 INFO test_essApi.py 测试用例::修改B端用户的msg_code::operate.success
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户需要进行数据库校验，校验sql::('uap_2c','demo','select description from uap_2c.nbp_operator_profile where operator_no="operator-20dy3m62nqio";')
+HESS 2023-10-23 15:28:07 DEBUG test_essApi.py 测试用例::修改B端用户查询数据库结果::自动化测试专用，期望结果::自动化测试专用
+HESS 2023-10-23 15:28:07 INFO test_essApi.py ess_data.xlsx::正常流程::测试用例::修改B端用户测试结果::Pass
+HESS 2023-10-23 15:28:07 INFO test_essApi.py 修改B端用户响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+HESS 2023-10-23 15:28:07 INFO test_essApi.py 修改B端用户的测试结果::Pass已存档

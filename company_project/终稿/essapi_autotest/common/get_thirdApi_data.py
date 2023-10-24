@@ -4,6 +4,12 @@
 一次性获取data目录下所有文件的所有数据
 数据存储形式为列表嵌套字典，每一行数据存储为字典。
 """
+import os
+import sys
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 import pandas as pd
 from conf.path import Path
 from common.out_log import OutLog

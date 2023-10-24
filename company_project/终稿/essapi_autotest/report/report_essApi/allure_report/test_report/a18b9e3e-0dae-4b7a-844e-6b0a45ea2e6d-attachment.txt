@@ -1,0 +1,17 @@
+DEBUG    HESS:test_essApi.py:39 测试用例::B端添加设备-逆变器的全局变量::downPrice_id==55
+DEBUG    HESS:test_essApi.py:48 测试用例::B端添加设备-逆变器的请求头::{'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMGR5M202Mm5xaW8iLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTMwMTkzOTI1LCJleHAiOjE3MDA2MzgwODksImlhdCI6MTY5ODA0NjA4OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.OzBpFKyH4-IIaozMjKqn_2hc-NJ7QLdTci4D8ROR1xPh7kMPh8ZlF5GCinLQ3FUn9TWYzjCaF_x5XPxCcMiocg'}
+INFO     HESS:test_essApi.py:51 **********测试用例【B端添加设备-逆变器】，开始请求接口**********
+DEBUG    HESS:test_essApi.py:52 测试用例::B端添加设备-逆变器的请求地址::http://192.168.108.160:8080/ctrller-manager/energystorage/insertNewList?groupId&deviceId&flag=1
+DEBUG    HESS:test_essApi.py:53 测试用例::B端添加设备-逆变器的请求方法::post
+DEBUG    HESS:test_essApi.py:59 测试用例::B端添加设备-逆变器的request_parameters::[{"inverterSn":"AutoTest_sn1","powerStation":55,"productType":102}]
+INFO     HESS:test_essApi.py:81 **********测试用例【B端添加设备-逆变器】，接口请求完成**********
+DEBUG    HESS:test_essApi.py:82 测试用例::B端添加设备-逆变器的请求头::{'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcGVyYXRvci0yMGR5M202Mm5xaW8iLCJjb2RlIjoibmJwIiwidG9rZW5JZCI6MjY0NjU5OTMwMTkzOTI1LCJleHAiOjE3MDA2MzgwODksImlhdCI6MTY5ODA0NjA4OSwib3duZXJfdHlwZSI6Im9wZXJhdG9yIiwibG9jYWwiOiJlbiJ9.OzBpFKyH4-IIaozMjKqn_2hc-NJ7QLdTci4D8ROR1xPh7kMPh8ZlF5GCinLQ3FUn9TWYzjCaF_x5XPxCcMiocg', 'Content-Length': '72'}
+DEBUG    HESS:test_essApi.py:83 测试用例::B端添加设备-逆变器的响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}
+DEBUG    HESS:test_essApi.py:98 测试用例::B端添加设备-逆变器没有返回cookie
+INFO     HESS:test_essApi.py:101 测试用例::B端添加设备-逆变器status_code::200符合预期结果::200
+INFO     HESS:test_essApi.py:111 测试用例::B端添加设备-逆变器的msg_code::operate.success
+DEBUG    HESS:test_essApi.py:123 测试用例::B端添加设备-逆变器需要进行数据库校验，校验sql::('hess','demo','select count(*) from hess.scada_energy_storage where inverter_sn="AutoTest_sn1" and is_delete=0;')
+DEBUG    HESS:test_essApi.py:127 测试用例::B端添加设备-逆变器查询数据库结果::1，期望结果::1
+INFO     HESS:test_essApi.py:133 ess_data.xlsx::正常流程::测试用例::B端添加设备-逆变器测试结果::Pass
+INFO     HESS:test_essApi.py:182 B端添加设备-逆变器响应报文::{'data': None, 'message': None, 'msgCode': 'operate.success', 'msg_code': 'operate.success'}已存档
+INFO     HESS:test_essApi.py:184 B端添加设备-逆变器的测试结果::Pass已存档

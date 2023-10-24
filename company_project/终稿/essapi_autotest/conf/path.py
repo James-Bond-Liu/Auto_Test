@@ -1,4 +1,10 @@
 import os
+import sys
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+import os
 class Path():
     project_path = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
     data_essApi = os.path.join(project_path, 'data_essApi')

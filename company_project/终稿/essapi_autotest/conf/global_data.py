@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+import os
+import sys
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 from  datetime import datetime, timedelta
 import time
 
@@ -31,9 +37,6 @@ class GlobalData():
     thirdSn_number_charge = None
     downPrice_id_charge = None
     upPrice_id_charge = None
-
-
-
     #当前时间两天前的零时时间戳毫秒级
     m1 = (datetime.now() + timedelta(days=-2)).strftime('%Y-%m-%d')
     startTimel= round(time.mktime(time.strptime(m1, "%Y-%m-%d")) * 1000)
