@@ -207,6 +207,53 @@ print(one)  # {'name': 'tiger', 'age': 4, 'address': '中国成都'}
 * 逻辑运算，and，or，not。返回结果布尔值
 * 成员运算符，in，not in。返回结果布尔值。
   * 对于字典只能判断key是否存在于字典中
+* 身份运算符 is，is not。身份运算符用于比较两个对象的内存地址是否一致——是否对同一个对象的引用。
+  * 用来判断是不是某种对象
+  * 在python中针对None比较时，建议使用is/is not判断
+
+
+
+#### 1. is 和==的区别
+
+is用于判断两个变量引用对象是否为同一个，既比较对象的地址
+
+==用于判断引用对象引用变量的值是否相等
+
+~~~python
+a = [1, 2, 3]
+print(id(a))  # 变量a地址 30302856
+b = [1, 2, 3, 4]
+print(id(b))  # 变量b地址 30302920
+ 
+a.append(4)
+print(a)  # [1, 2, 3, 4]
+ 
+print(a is b)  # False
+print(a == b)  # True
+~~~
+
+#### 2. not使用方法
+
+* not 关键字的作用是对一个对象进行逻辑取反。
+
+* not A，是判断A是否为0、False、空字符串、空列表、空字典、空元组以及None，满足任一条件即返回True
+
+~~~python
+>>> not 123
+False
+>>> not [1, 2, 3]
+False
+>>> not 0
+True
+>>> not None
+True
+~~~
+
+
+
+
+
+
 
 
 
@@ -352,6 +399,39 @@ result2 = list(zip(s1,s2))  # [('key1','value1'),('key2','value2')]。返回一�
 
 ​	func：函数名后不带()，调用的是整个函数体，调用的是一个函数对象，不用等待函数执行。
 
+#### 4.return
+
+​	python执行到return语句时，会退出函数，return之后的语句不再执行。
+
+~~~python
+def fun():
+    if 1:
+        if 1:
+            print('323')
+            return 'ok'
+    print('wejrlkewdj')
+
+fun()  # 323
+~~~
+
+
+
+​	但将return语句放在try语句块中，是个例外。
+
+~~~python
+def func():
+	try:
+        print('hello')
+        return 'ok'
+    finally:
+        print('world')
+func()  # hello 
+		# world
+       
+~~~
+
+
+
 ### 8、文件操作
 
 #### 1.open(文件路径, mode)
@@ -432,51 +512,88 @@ ab.py尝试打开b_file下的a.txt：../b_file/a.txt
 
 ### 10、异常处理
 
-1. try:
+#### 1.try...expect
 
-   ​	未报错，执行的动作语句
+try:
 
-   except  错误类型:   				  # 错误类型可以为Exception（所有错误类型的基类）
+​	未报错，执行的动作语句
 
-   ​	报错，执行的动作语句								# 或者写具体的错误类型例如TypeErr或者直接不写错误类型。
+except  错误类型:   				  # 错误类型可以为Exception（所有错误类型的基类）
 
-   ​	
+​	报错，执行的动作语句								# 或者写具体的错误类型例如TypeErr或者直接不写错误类型。
 
-2. try:
 
-   ​    未报错，执行的动作语句
 
-   except：
+#### 2.try...expect...findally...
 
-   ​	报错，执行的动作语句
+try:
 
-   findally:
+​    未报错，执行的动作语句
 
-   ​	无论报错与否，都要执行的动作语句。
+except：
 
-   
+​	报错，执行的动作语句
 
-3. try:
+findally:
 
-   ​    未报错，执行的动作语句
+​	无论报错与否，都要执行的动作语句。
 
-   except：
+#### 3.try...except...else...
 
-   ​	报错，执行的动作语句
+try:
 
-   else:
+​    未报错，执行的动作语句
 
-   ​	和try下的未报错代码同步，try执行，else执行。
+except：
 
-4. try:
+​	报错，执行的动作语句
 
-   ​	未报错，执行的动作语句
+else:
 
-   except  Exception as e:    # 将Exception错误类型赋值给变量e	  
+​	和try下的未报错代码同步，try执行，else执行。
 
-   ​	报错，执行的动作语句	
+4.raise释放异常
 
-   ​	raise e   # 将错误释放出来。raise下方的代码不再执行，findally除外。
+try:
+
+​	未报错，执行的动作语句
+
+except  Exception as e:    # 将Exception错误类型赋值给变量e	  
+
+​	报错，执行的动作语句	
+
+​	raise e   # 将错误释放出来。raise下方的代码不再执行，findally除外。
+
+~~~python
+def func():
+    if True:
+        try:
+            a = 1/0
+        except Exception as e:
+            raise e
+        finally:
+            print('hello')
+    if True:
+        print('djfalkdsj')
+    print('world')
+def lll():
+    print('oooo'*100)
+
+func()
+lll()
+输出：
+hello
+Traceback (most recent call last):
+  File "G:\project_2023\essapi_autotest_2023\myself\do_mathc.py", line 31, in <module>
+    func()
+  File "G:\project_2023\essapi_autotest_2023\myself\do_mathc.py", line 22, in func
+    raise e
+  File "G:\project_2023\essapi_autotest_2023\myself\do_mathc.py", line 20, in func
+    a = 1/0
+ZeroDivisionError: division by zero
+~~~
+
+
 
 ### 11、类与对象
 
@@ -809,6 +926,27 @@ python -m pip install --upgrade pip  # 升级pip命令
 1. 将第三方库的离线安装包*whl保存至python的lib目录
 2. 命令行窗口用cd命令跳转到whl文件所在目录，然后使用命令python -m pip install ***.whl即可完成whl文件的安装。
    1. 或者在whl文件所在目录执行python setup install *.whl  
+
+
+
+### 16、python代码在Linux环境中运行
+
+问题：在pycharm运行成功但在linux运行ModuleNotFoundError: No module named *xxx*
+
+原因：主要是在使用pycharm的时候你进行多个文件的目录的整理或者打包，在主函数中被调用 from xxx import xxx时，路径会被编译器直接加入到运行中去，而在linux环境中最原始的running则会报错，找不到路径
+
+解决办法：
+
+~~~python
+import os
+import sys
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+~~~
+
+
 
 
 
