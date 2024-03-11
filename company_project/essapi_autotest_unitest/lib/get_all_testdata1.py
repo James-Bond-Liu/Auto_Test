@@ -22,7 +22,6 @@ class GetRequestData():
         except Exception as e:
             logger.error("获取路径{}下的所有文件名失败，详细信息为{}".format(excel_data, e))
             raise e
-
     def get_request_data(self):
         logger.info('开始获取data目录下所有Excel文件测试数据')
         test_data = []
@@ -36,7 +35,6 @@ class GetRequestData():
             for sheet in sheet_names:
                 logger.info('正在获取Excel文件{}的{}sheet表单数据'.format(file, sheet))
                 ws = wb[sheet]
-
                 for i in range(2, ws.max_row + 1):
                     sub_data = {}
                     sub_data['case_id'] = ws.cell(i, 1).value

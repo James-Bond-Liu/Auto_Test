@@ -10,11 +10,8 @@ from company_project.essapi_autotest_unitest.conf.project_path import *
 from company_project.essapi_autotest_unitest.lib.out_log import OutLog
 from company_project.essapi_autotest_unitest.lib.read_config import ReadConfig
 
-
 logger = OutLog().out_log()
 class GetRequestData():
-
-
     def get_filename(self):  # 获取目录下所有文件的文件名
         try:
             for root, dirs, files in os.walk(excel_data):
