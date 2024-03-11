@@ -27,7 +27,7 @@ sheet_names = pd.ExcelFile(r'../基础知识\test_data.xlsx')
 test_data = []
 # 获取excel文件中所有sheet表单中的所有数据
 for sheet in sheet_names.sheet_names:
-    data = pd.read_excel(r'../基础知识\test_data.xlsx', sheet_name=sheet, header=0)
+    data = pd.read_excel(r'../web\test_data.xlsx', sheet_name=sheet, header=0)
     rows = data.index.values
     for i in rows:
         row_data = data.loc[i, ['case_id', 'url', 'data', 'title', 'http_method', 'expected', 'result', 'test_result']].to_dict()

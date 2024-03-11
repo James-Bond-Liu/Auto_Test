@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 # @Time :2021/8/3 19:26
 # @Author : liufei
@@ -23,13 +22,17 @@
 import pandas as pd
 
 # 获取文件中所有的表单名sheet_names.sheet_names
-sheet_names = pd.ExcelFile(r'../基础知识\test_data.xlsx')
+sheet_names = pd.ExcelFile(r'test_data.xlsx')
 test_data = []
 # 获取excel文件中所有sheet表单中的所有数据
 for sheet in sheet_names.sheet_names:
-    data = pd.read_excel(r'../基础知识\test_data.xlsx', sheet_name=sheet, header=0)
+    data = pd.read_excel(r'./test_data.xlsx', sheet_name=sheet, header=0)
     rows = data.index.values
     for i in rows:
-        row_data = data.loc[i, ['case_id', 'url', 'data', 'title', 'http_method', 'expected', 'result', 'test_result']].to_dict()
+        row_data = data.loc[
+            i, ['case_id', 'case_name', 'path_info', 'method', 'sql_before', 'parameters',  'request_expect_result',
+                'request_actual_result', 'sql_after', 'database_compare_sql', 'database_expect_result', 'expect_status_code',
+                'test_result']].to_dict()
         test_data.append(row_data)
 print(test_data)
+print(sheet_names)
